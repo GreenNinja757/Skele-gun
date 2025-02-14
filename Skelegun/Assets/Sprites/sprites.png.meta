@@ -369,8 +369,8 @@ TextureImporter:
       name: sprites_11
       rect:
         serializedVersion: 2
-        x: 0
-        y: 208
+        x: 80
+        y: 224
         width: 16
         height: 16
       alignment: 0
@@ -391,7 +391,7 @@ TextureImporter:
       name: sprites_12
       rect:
         serializedVersion: 2
-        x: 16
+        x: 0
         y: 208
         width: 16
         height: 16
@@ -413,7 +413,7 @@ TextureImporter:
       name: sprites_13
       rect:
         serializedVersion: 2
-        x: 32
+        x: 16
         y: 208
         width: 16
         height: 16
@@ -435,7 +435,7 @@ TextureImporter:
       name: sprites_14
       rect:
         serializedVersion: 2
-        x: 48
+        x: 32
         y: 208
         width: 16
         height: 16
@@ -457,7 +457,7 @@ TextureImporter:
       name: sprites_15
       rect:
         serializedVersion: 2
-        x: 64
+        x: 48
         y: 208
         width: 16
         height: 16
@@ -479,8 +479,8 @@ TextureImporter:
       name: sprites_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
+        x: 64
+        y: 208
         width: 16
         height: 16
       alignment: 0
@@ -501,7 +501,7 @@ TextureImporter:
       name: sprites_17
       rect:
         serializedVersion: 2
-        x: 16
+        x: 32
         y: 192
         width: 16
         height: 16
@@ -523,7 +523,7 @@ TextureImporter:
       name: sprites_18
       rect:
         serializedVersion: 2
-        x: 32
+        x: 48
         y: 192
         width: 16
         height: 16
@@ -545,8 +545,8 @@ TextureImporter:
       name: sprites_19
       rect:
         serializedVersion: 2
-        x: 48
-        y: 192
+        x: 0
+        y: 176
         width: 16
         height: 16
       alignment: 0
@@ -567,7 +567,7 @@ TextureImporter:
       name: sprites_20
       rect:
         serializedVersion: 2
-        x: 0
+        x: 16
         y: 176
         width: 16
         height: 16
@@ -589,8 +589,8 @@ TextureImporter:
       name: sprites_21
       rect:
         serializedVersion: 2
-        x: 16
-        y: 176
+        x: 0
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -611,7 +611,7 @@ TextureImporter:
       name: sprites_22
       rect:
         serializedVersion: 2
-        x: 0
+        x: 16
         y: 160
         width: 16
         height: 16
@@ -633,7 +633,7 @@ TextureImporter:
       name: sprites_23
       rect:
         serializedVersion: 2
-        x: 16
+        x: 48
         y: 160
         width: 16
         height: 16
@@ -655,7 +655,7 @@ TextureImporter:
       name: sprites_24
       rect:
         serializedVersion: 2
-        x: 48
+        x: 64
         y: 160
         width: 16
         height: 16
@@ -677,7 +677,7 @@ TextureImporter:
       name: sprites_25
       rect:
         serializedVersion: 2
-        x: 64
+        x: 80
         y: 160
         width: 16
         height: 16
@@ -699,8 +699,8 @@ TextureImporter:
       name: sprites_26
       rect:
         serializedVersion: 2
-        x: 80
-        y: 160
+        x: 96
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -721,7 +721,7 @@ TextureImporter:
       name: sprites_27
       rect:
         serializedVersion: 2
-        x: 96
+        x: 112
         y: 144
         width: 16
         height: 16
@@ -743,7 +743,7 @@ TextureImporter:
       name: sprites_28
       rect:
         serializedVersion: 2
-        x: 112
+        x: 128
         y: 144
         width: 16
         height: 16
@@ -765,7 +765,7 @@ TextureImporter:
       name: sprites_29
       rect:
         serializedVersion: 2
-        x: 128
+        x: 144
         y: 144
         width: 16
         height: 16
@@ -787,7 +787,7 @@ TextureImporter:
       name: sprites_30
       rect:
         serializedVersion: 2
-        x: 144
+        x: 160
         y: 144
         width: 16
         height: 16
@@ -809,7 +809,7 @@ TextureImporter:
       name: sprites_31
       rect:
         serializedVersion: 2
-        x: 160
+        x: 176
         y: 144
         width: 16
         height: 16
@@ -831,8 +831,8 @@ TextureImporter:
       name: sprites_32
       rect:
         serializedVersion: 2
-        x: 176
-        y: 144
+        x: 96
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -853,7 +853,7 @@ TextureImporter:
       name: sprites_33
       rect:
         serializedVersion: 2
-        x: 96
+        x: 160
         y: 128
         width: 16
         height: 16
@@ -875,8 +875,8 @@ TextureImporter:
       name: sprites_34
       rect:
         serializedVersion: 2
-        x: 160
-        y: 128
+        x: 96
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -897,7 +897,7 @@ TextureImporter:
       name: sprites_35
       rect:
         serializedVersion: 2
-        x: 96
+        x: 160
         y: 112
         width: 16
         height: 16
@@ -919,8 +919,8 @@ TextureImporter:
       name: sprites_36
       rect:
         serializedVersion: 2
-        x: 160
-        y: 112
+        x: 96
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -942,7 +942,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 96
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -964,7 +964,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 80
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -977,28 +977,6 @@ TextureImporter:
       bones: []
       spriteID: a5ebd4117f1d38d4485bffa7f12e6d22
       internalID: 552373374
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprites_39
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93303c7756b66f7459bd143802999620
-      internalID: 936289073
       vertices: []
       indices: 
       edges: []
@@ -1050,7 +1028,6 @@ TextureImporter:
       sprites_36: -1182674291
       sprites_37: 287233926
       sprites_38: 552373374
-      sprites_39: 936289073
       sprites_4: 6708733205153277002
       sprites_5: 6813553822765877458
       sprites_6: -5082647686934749709

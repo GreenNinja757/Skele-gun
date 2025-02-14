@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 1142
+  controlID: 5297
   draggingID: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -92,7 +92,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 1
+    m_HSlider: 0
     m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
@@ -106,18 +106,18 @@ MonoBehaviour:
       y: 21
       width: 1101
       height: 511
-    m_Scale: {x: 1.320816, y: 1.320816}
-    m_Translation: {x: 1.1292379, y: 552.42456}
+    m_Scale: {x: 0.4873426, y: 0.4873426}
+    m_Translation: {x: 550.5, y: 249.99503}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -0.8549547
-      y: -418.2449
-      width: 833.57556
-      height: 386.88205
+      x: -1129.5955
+      y: -512.97595
+      width: 2259.191
+      height: 1048.5437
     m_MinimalGUI: 1
   m_defaultScale: 0.47314814
   m_LastWindowPixelSize: {x: 1101, y: 532}
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 1143
+  controlID: 5298
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 1144
+  controlID: 5299
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -243,9 +243,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 90dfffff
-      m_LastClickedID: -8304
-      m_ExpandedIDs: ccfaffffe6faffffa6ae0000
+      m_SelectedIDs: f2ae0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: e6faffffa6ae0000b0ae0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -876,9 +876,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -0.42466113, y: 1.9843591, z: -0.95192325}
+    m_Target: {x: -1.9924018, y: -3.3020067, z: 0}
     speed: 2
-    m_Value: {x: -0.47599083, y: 1.9718037, z: -0.9537918}
+    m_Value: {x: -1.9924018, y: -3.3020067, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -928,9 +928,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3.9654741
+    m_Target: 6.0662503
     speed: 2
-    m_Value: 4.152329
+    m_Value: 6.0662503
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1035,7 +1035,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Sprites
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1045,16 +1045,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Sprites
   m_LastFoldersGridSize: -1
   m_LastProjectPath: G:\Unity Projects\Bodybuilder\Skelegun
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b8b10000
-    m_LastClickedID: 45496
-    m_ExpandedIDs: 000000006eaf000070af00008eb1000000ca9a3b
+    m_SelectedIDs: 70b10000
+    m_LastClickedID: 45424
+    m_ExpandedIDs: 000000006eb1000070b1000074b1000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1083,7 +1083,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006eaf000070af000000ca9a3b
+    m_ExpandedIDs: 000000006eb1000070b1000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1109,10 +1109,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 90dfffff
-    m_LastClickedInstanceID: -8304
+    m_SelectedInstanceIDs: f2ae0000
+    m_LastClickedInstanceID: 44786
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000
+    m_ExpandedInstanceIDs: c6230000f2ae0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
