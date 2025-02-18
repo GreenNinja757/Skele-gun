@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     public PlayerInput playerInput;
 
-    public Transform weaponSpawnPoint;
+    public Transform weaponRotationPoint;
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
 
@@ -18,7 +18,8 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public float bulletSpeed;
 
-    public SpriteRenderer sr;
+    public SpriteRenderer playerSprite;
+    public SpriteRenderer gunSprite;
 
     public Camera cam;
 
@@ -42,7 +43,7 @@ public class PlayerController : MonoBehaviour
         Vector3 diff = Camera.main.ScreenToWorldPoint(Input.mousePosition) - bulletSpawnPoint.transform.position;
         diff.Normalize();
         float rotZ = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
-        weaponSpawnPoint.rotation = Quaternion.Euler(0f, 0f, rotZ);
+        weaponRotationPoint.rotation = Quaternion.Euler(0f, 0f, rotZ);
 
         if (playerInput.actions["Shoot"].WasPressedThisFrame())
         {
@@ -50,22 +51,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void Flip()
+    void FlipSprites()
     {
         if (rb.linearVelocity.x < 0)
         {
-            sr.flipX = true;
+            playerSprite.flipX = true;
         } else if (rb.linearVelocity.x > 0)
         {
-            sr.flipX = false;
+            playerSprite.flipX = false;
         }
-    }
 
-    void AimCamera()
-    {
-        float newCamX = (Camera.main.ScreenToWorldPoint(Input.mousePosition).x + transform.position.x) / 2f;
-        float newCamY = (Camera.main.ScreenToWorldPoint(Input.mousePosition).y + transform.position.y) / 2f;
-        cam.transform.position = new Vector3(newCamX, newCamY, -1);
+        if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x < transform.position.x)
+        {
+            gunSprite.flipY = true;
+        } else if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x > transform.position.x)
+        {
+            gunSprite.flipY = false;
+        }
     }
 
     // Update is called once per frame
@@ -73,7 +75,6 @@ public class PlayerController : MonoBehaviour
     {
         Move();
         Shoot();
-        Flip();
-        AimCamera();
+        FlipSprites();
     }
 }
