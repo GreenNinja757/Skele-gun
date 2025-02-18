@@ -4,7 +4,6 @@ public class CameraController : MonoBehaviour
 {
     public Camera cam;
     public Transform player;
-    public float threshold;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -12,15 +11,16 @@ public class CameraController : MonoBehaviour
         
     }
 
+    void AimCamera()
+    {
+        float newCamX = (cam.ScreenToWorldPoint(Input.mousePosition).x + player.position.x) / 2f;
+        float newCamY = (cam.ScreenToWorldPoint(Input.mousePosition).y + player.position.y) / 2f;
+        cam.transform.position = new Vector3(newCamX, newCamY, -1);
+    }
+
     // Update is called once per frame
     void Update()
     {
-        Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 targetPos = (player.position - mousePos) / 2f;
-
-        targetPos.x = Mathf.Clamp(targetPos.x, -threshold + player.position.x, threshold + player.position.x);
-        targetPos.x = Mathf.Clamp(targetPos.x, -threshold + player.position.y, threshold + player.position.y);
-
-        this.transform.position = targetPos;
+        AimCamera();
     }
 }

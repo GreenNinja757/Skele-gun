@@ -17,7 +17,6 @@ public class Chest : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Opened chest!");
         if (collision.gameObject.tag == "Player")
         {
             sr.sprite = openChest;
