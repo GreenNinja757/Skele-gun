@@ -13,8 +13,6 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
 
     public Rigidbody2D rb;
-    public Vector2 horMov;
-    public Vector2 verMov;
     public float moveSpeed;
     public float bulletSpeed;
 
@@ -31,11 +29,7 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        horMov = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
-        verMov = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
-
-        rb.linearVelocityX = horMov.x;
-        rb.linearVelocityY = horMov.y;
+        rb.linearVelocity = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
     }
     
     void Shoot()
