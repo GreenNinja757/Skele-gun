@@ -9,12 +9,6 @@ public class Chest : MonoBehaviour
     public Transform itemSpawnPoint;
     public GameObject itemPrefab;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -24,9 +18,10 @@ public class Chest : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    void spawnItem()
     {
+        //pick rarity
         
+        //pick item within selected rarity
     }
 }
