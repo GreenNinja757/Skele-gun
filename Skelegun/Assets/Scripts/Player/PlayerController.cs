@@ -1,5 +1,8 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< HEAD
 #if UNITY_EDITOR
 using UnityEditor.SpeedTree.Importer;  
@@ -9,6 +12,9 @@ using UnityEditor.SpeedTree.Importer;
 using UnityEngine.Tilemaps;
 =======
 >>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -29,8 +35,11 @@ public class PlayerController : MonoBehaviour
     void Move()
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         rb.linearVelocity = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< HEAD
         horMov = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
         verMov = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
@@ -39,6 +48,9 @@ public class PlayerController : MonoBehaviour
 =======
         rb.linearVelocity = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
 >>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
     
