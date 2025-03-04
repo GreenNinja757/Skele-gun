@@ -1,45 +1,32 @@
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-#if UNITY_EDITOR
-using UnityEditor.SpeedTree.Importer;  
-using UnityEditor.SpeedTree.Importer;
-#endif
-
-using UnityEngine.Tilemaps;
-=======
->>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b
->>>>>>> Stashed changes
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
     public PlayerInput playerInput;
+
     public Transform weaponRotationPoint;
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
+
     public Rigidbody2D rb;
     public float moveSpeed;
     public float bulletSpeed;
+
     public SpriteRenderer playerSprite;
     public SpriteRenderer gunSprite;
+
     public Camera cam;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+         
+    }
 
     void Move()
     {
-<<<<<<< Updated upstream
         rb.linearVelocity = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
-=======
-<<<<<<< HEAD
-        horMov = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
-        verMov = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
-        rb.linearVelocityX = horMov.x;
-        rb.linearVelocityY = horMov.y;
-=======
-        rb.linearVelocity = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
->>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b
->>>>>>> Stashed changes
     }
     
     void Shoot()
