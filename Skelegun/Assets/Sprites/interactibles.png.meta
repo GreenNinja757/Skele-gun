@@ -146,6 +146,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: interactibles_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2a07b5a31fc324bbacb1f7e4b28016
+      internalID: -295431921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interactibles_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b6f0ab7344a2048b0ccf0dcd69835f
+      internalID: 103817525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -162,6 +206,8 @@ TextureImporter:
     nameFileIdTable:
       interactibles_0: -8453634683706359070
       interactibles_1: -2315322524631627540
+      interactibles_2: -295431921
+      interactibles_3: 103817525
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
