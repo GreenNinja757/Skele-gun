@@ -1,3 +1,15 @@
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+#if UNITY_EDITOR
+using UnityEditor.SpeedTree.Importer;  
+using UnityEditor.SpeedTree.Importer;
+#endif
+
+using UnityEngine.Tilemaps;
+=======
+>>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b
+>>>>>>> Stashed changes
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,9 +28,20 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
+<<<<<<< Updated upstream
         rb.linearVelocity = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
+=======
+<<<<<<< HEAD
+        horMov = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
+        verMov = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
+        rb.linearVelocityX = horMov.x;
+        rb.linearVelocityY = horMov.y;
+=======
+        rb.linearVelocity = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
+>>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b
+>>>>>>> Stashed changes
     }
-
+    
     void Shoot()
     {
         Vector3 diff = Camera.main.ScreenToWorldPoint(Input.mousePosition) - bulletSpawnPoint.transform.position;
@@ -37,8 +60,7 @@ public class PlayerController : MonoBehaviour
         if (rb.linearVelocity.x < 0)
         {
             playerSprite.flipX = true;
-        }
-        else if (rb.linearVelocity.x > 0)
+        } else if (rb.linearVelocity.x > 0)
         {
             playerSprite.flipX = false;
         }
@@ -46,8 +68,7 @@ public class PlayerController : MonoBehaviour
         if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x < transform.position.x)
         {
             gunSprite.flipY = true;
-        }
-        else if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x > transform.position.x)
+        } else if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x > transform.position.x)
         {
             gunSprite.flipY = false;
         }
