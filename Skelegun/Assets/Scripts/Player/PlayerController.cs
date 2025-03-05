@@ -1,33 +1,9 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
 #if UNITY_EDITOR
 using UnityEditor.SpeedTree.Importer;  
 using UnityEditor.SpeedTree.Importer;
 #endif
 
 using UnityEngine.Tilemaps;
-=======
->>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -40,42 +16,19 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public float moveSpeed;
     public float bulletSpeed;
+    public Vector2 horMov;
+    public Vector2 verMov;
     public SpriteRenderer playerSprite;
     public SpriteRenderer gunSprite;
     public Camera cam;
 
     void Move()
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        rb.linearVelocity = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
         horMov = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
         verMov = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
         rb.linearVelocityX = horMov.x;
         rb.linearVelocityY = horMov.y;
-=======
         rb.linearVelocity = playerInput.actions["Move"].ReadValue<Vector2>() * moveSpeed;
->>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     }
     
     void Shoot()

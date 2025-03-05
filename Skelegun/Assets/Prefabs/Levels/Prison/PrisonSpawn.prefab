@@ -1,17 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
---- !u!1 &1183817117456123883
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 <<<<<<< HEAD:Skelegun/Assets/Scenes/TestScene.unity
 --- !u!29 &1
 OcclusionCullingSettings:
@@ -2843,15 +2832,6 @@ MonoBehaviour:
 =======
 --- !u!1 &1183817117456123883
 >>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b:Skelegun/Assets/Prefabs/Levels/Prison/PrisonSpawn.prefab
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
@@ -3013,31 +2993,11 @@ GameObject:
   - component: {fileID: 9212077183579967125}
   m_Layer: 3
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  m_Name: PrisonSpawn
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 <<<<<<< HEAD:Skelegun/Assets/Scenes/TestScene.unity
   m_Name: Room 1
 =======
   m_Name: PrisonSpawn
 >>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b:Skelegun/Assets/Prefabs/Levels/Prison/PrisonSpawn.prefab
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3067,16 +3027,6 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 <<<<<<< HEAD:Skelegun/Assets/Scenes/TestScene.unity
 --- !u!1 &679311869
 GameObject:
@@ -6702,15 +6652,6 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302641410}
 =======
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 --- !u!156049354 &9212077183579967125
 Grid:
@@ -6720,18 +6661,6 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399938781785284468}
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b:Skelegun/Assets/Prefabs/Levels/Prison/PrisonSpawn.prefab
->>>>>>> Stashed changes
-=======
->>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b:Skelegun/Assets/Prefabs/Levels/Prison/PrisonSpawn.prefab
->>>>>>> Stashed changes
-=======
->>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b:Skelegun/Assets/Prefabs/Levels/Prison/PrisonSpawn.prefab
->>>>>>> Stashed changes
 =======
 >>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b:Skelegun/Assets/Prefabs/Levels/Prison/PrisonSpawn.prefab
 >>>>>>> Stashed changes
@@ -6741,17 +6670,6 @@ Grid:
   m_CellLayout: 0
   m_CellSwizzle: 0
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
---- !u!1 &3417708169055225199
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 <<<<<<< HEAD:Skelegun/Assets/Scenes/TestScene.unity
 --- !u!4 &1302641412
 Transform:
@@ -6808,15 +6726,6 @@ Transform:
 =======
 --- !u!1 &3417708169055225199
 >>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b:Skelegun/Assets/Prefabs/Levels/Prison/PrisonSpawn.prefab
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
@@ -7908,18 +7817,6 @@ CompositeCollider2D:
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  m_CompositeGameObject: {fileID: 3792029596640097560}
---- !u!1 &6112251011141777355
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 <<<<<<< HEAD:Skelegun/Assets/Scenes/TestScene.unity
   m_CompositeGameObject: {fileID: 1510429150}
 --- !u!50 &1510429156
@@ -8913,15 +8810,6 @@ Tilemap:
   m_CompositeGameObject: {fileID: 3792029596640097560}
 --- !u!1 &6112251011141777355
 >>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b:Skelegun/Assets/Prefabs/Levels/Prison/PrisonSpawn.prefab
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
@@ -11494,19 +11382,7 @@ TilemapRenderer:
   m_RendererPriority: 0
   m_Materials:
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-=======
-  - {fileID: 2100000, guid: 7aa4610afe3d34a4aa9f1c7623bd853d, type: 2}
->>>>>>> Stashed changes
-=======
-  - {fileID: 2100000, guid: 7aa4610afe3d34a4aa9f1c7623bd853d, type: 2}
->>>>>>> Stashed changes
-=======
-  - {fileID: 2100000, guid: 7aa4610afe3d34a4aa9f1c7623bd853d, type: 2}
->>>>>>> Stashed changes
 =======
   - {fileID: 2100000, guid: 7aa4610afe3d34a4aa9f1c7623bd853d, type: 2}
 >>>>>>> Stashed changes
@@ -11650,16 +11526,6 @@ SpriteRenderer:
   m_Sprite: {fileID: -295431921, guid: 167e37f6d25649e43ac43413372d4db0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 <<<<<<< HEAD:Skelegun/Assets/Scenes/TestScene.unity
   m_Origin: {x: -10, y: -6, z: 0}
   m_Size: {x: 19, y: 11, z: 1}
@@ -11893,33 +11759,12 @@ SpriteRenderer:
   m_DrawMode: 0
   m_Size: {x: 0.12, y: 0.12}
 =======
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b:Skelegun/Assets/Prefabs/Levels/Prison/PrisonSpawn.prefab
->>>>>>> Stashed changes
-=======
->>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b:Skelegun/Assets/Prefabs/Levels/Prison/PrisonSpawn.prefab
->>>>>>> Stashed changes
-=======
->>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b:Skelegun/Assets/Prefabs/Levels/Prison/PrisonSpawn.prefab
->>>>>>> Stashed changes
 =======
 >>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b:Skelegun/Assets/Prefabs/Levels/Prison/PrisonSpawn.prefab
 >>>>>>> Stashed changes
@@ -11929,18 +11774,6 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
---- !u!61 &5506091795630941401
-BoxCollider2D:
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 <<<<<<< HEAD:Skelegun/Assets/Scenes/TestScene.unity
 --- !u!1001 &4646582152263084720
 PrefabInstance:
@@ -11948,15 +11781,6 @@ PrefabInstance:
 --- !u!61 &5506091795630941401
 BoxCollider2D:
 >>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b:Skelegun/Assets/Prefabs/Levels/Prison/PrisonSpawn.prefab
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12006,16 +11830,6 @@ BoxCollider2D:
 MonoBehaviour:
   m_ObjectHideFlags: 0
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 <<<<<<< HEAD:Skelegun/Assets/Scenes/TestScene.unity
   serializedVersion: 2
   m_Modification:
@@ -12171,15 +11985,6 @@ SceneRoots:
   - {fileID: 543522543}
   - {fileID: 1279795562}
 =======
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -12193,18 +11998,5 @@ SceneRoots:
   sr: {fileID: 6956894742436736818}
   openDoor: {fileID: 103817525, guid: 167e37f6d25649e43ac43413372d4db0, type: 3}
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b:Skelegun/Assets/Prefabs/Levels/Prison/PrisonSpawn.prefab
->>>>>>> Stashed changes
-=======
->>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b:Skelegun/Assets/Prefabs/Levels/Prison/PrisonSpawn.prefab
->>>>>>> Stashed changes
-=======
->>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b:Skelegun/Assets/Prefabs/Levels/Prison/PrisonSpawn.prefab
->>>>>>> Stashed changes
-=======
 >>>>>>> 9b0d114037be07104583a503d745c7e4a2e4e37b:Skelegun/Assets/Prefabs/Levels/Prison/PrisonSpawn.prefab
 >>>>>>> Stashed changes
