@@ -70,4 +70,9 @@ public class PlayerController : MonoBehaviour
         Shoot();
         FlipSprites();
     }
+
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
 }

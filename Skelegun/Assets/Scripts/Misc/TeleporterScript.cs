@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class TeleporterScript : MonoBehaviour
 {
-    public Transform targetPosition; 
+    private Vector3 destination;
+    public bool isFinalExit = false;
+    public string nextLevelScene; // Set by the spawner
     private static bool isTeleporting = false;  // Shared Teleporter Cooldown 
     private static float teleportCooldown = 2f;  // Delay to prevent looping
     private static Image fader;
@@ -20,26 +23,36 @@ public class TeleporterScript : MonoBehaviour
     {
         if (other.CompareTag("Player") && !isTeleporting)
         {
-
             StartCoroutine(TeleportPlayer(other.transform));
-            //Fade back in
-
         }
     }
-    private System.Collections.IEnumerator TeleportPlayer(Transform player)
+    private IEnumerator TeleportPlayer(Transform player)
     {
-        isTeleporting = true;  //Prevents loop
+        isTeleporting = true;
+        yield return StartCoroutine(FadeScreen(1f)); 
+        if (isFinalExit)
+        {
+            // If final exit, load the next level
+            SceneManager.LoadScene(nextLevelScene);
+        }
+        else if (destination != Vector3.zero)
+        {
+            // Move the player to the destination teleporter position
+            player.position = destination;
+        }
+        yield return StartCoroutine(FadeScreen(0f));
+        yield return new WaitForSeconds(teleportCooldown);
+        isTeleporting = false;
+    }
+    public void SetDestination(Vector3 targetPosition)
+    {
+        destination = targetPosition;
 
-        // Fade to black
-        yield return StartCoroutine(FadeScreen(1));
-        //Move
-        player.position = targetPosition.position;
-        // Fade back in
-        yield return StartCoroutine(FadeScreen(0));
+        if(destination == Vector3.zero)
+    {
+            gameObject.SetActive(false); // Disable teleporters that don't get a valid destination
+        }
 
-        yield return new WaitForSeconds(teleportCooldown);  //delay
-
-        isTeleporting = false;  //Allow teleporting again
     }
     private IEnumerator FadeScreen(float targetAlpha)
     {
@@ -60,4 +73,24 @@ public class TeleporterScript : MonoBehaviour
         fader.color = new Color(0, 0, 0, targetAlpha);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
