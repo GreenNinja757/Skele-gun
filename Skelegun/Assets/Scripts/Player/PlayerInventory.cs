@@ -1,22 +1,51 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    public ArrayList inventory;
+    public List<Item> itemInventory; 
+    public List<Weapon> weaponInventory;
+
+    public Weapon equippedWeapon;
+    public int equipSlot;
 
     void Start()
     {
-        inventory = new ArrayList();
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.gameObject.SetActive(false);
+        if (collision.tag == "Item")
+        {
+            collision.gameObject.SetActive(false);
+        }
     }
 
-    private void addItem()
+    public void previousWeapon()
     {
+        if (equipSlot - 1 >= 0)
+        {
+            equipSlot -= 1;
+        } 
+        else
+        {
+            equipSlot = weaponInventory.Count;
+        }
+        equippedWeapon = weaponInventory[equipSlot];
+    }
 
+    public void nextWeapon()
+    {
+        if (equipSlot + 1 <= weaponInventory.Count)
+        {
+            equipSlot += 1;
+        }
+        else
+        {
+            equipSlot = 0;
+        }
+        equippedWeapon = weaponInventory[equipSlot];
     }
 }

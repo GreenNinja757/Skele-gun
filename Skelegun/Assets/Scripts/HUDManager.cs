@@ -1,12 +1,7 @@
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class HUDManager : MonoBehaviour
 {
-    public int level;
-    public int roomCount;
-    public int treasureRoomCount;
-    public int shopRoomCount;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,13 +14,18 @@ public class GameManager : MonoBehaviour
         
     }
 
-    void startGame()
+    public void updateHealthBar()
     {
-        
+
     }
 
-    void generateLevel()
+    public void updateMoneyCount()
     {
 
+    }
+
+    public void updateAmmoCount()
+    {
+        
     }
 }

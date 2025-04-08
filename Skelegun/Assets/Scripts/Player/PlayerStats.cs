@@ -2,18 +2,23 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    [SerializeField]private int health;
-    [SerializeField]private float speed; 
+    public HUDManager playerHUD;
 
+    public int maxHealth;
+    public int currentHealth;
+    public int money;
+    public int moveSpeed;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        //base stats
+        maxHealth = 10;
+        currentHealth = maxHealth;
+        money = 0;
+        moveSpeed = 5;
+        //playerHUD.updateHUD();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
