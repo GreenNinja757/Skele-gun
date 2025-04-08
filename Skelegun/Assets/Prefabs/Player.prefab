@@ -266,8 +266,7 @@ MonoBehaviour:
   currentHealth: 0
   money: 0
   moveSpeed: 0
---- !u!114 &5439424832613071729
-MonoBehaviour:
+  MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -282,8 +281,7 @@ MonoBehaviour:
   weaponInventory: []
   equippedWeapon: {fileID: 0}
   equipSlot: 0
---- !u!95 &7142672887242461612
-Animator:
+  Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -304,7 +302,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &2354662014296313989
+  playerInput: {fileID: 3755231754706468327}
+  weaponRotationPoint: {fileID: 6768090068658285858}
+  bulletSpawnPoint: {fileID: 4823575688453946144}
+  bulletPrefab: {fileID: 6515214971337257585, guid: ccc4ba9e04706e644bc28fba2178624e, type: 3}
+  rb: {fileID: 3051890576083394264}
+  moveSpeed: 7.5
+  bulletSpeed: 15
+  horMov: {x: 0, y: 0}
+  verMov: {x: 0, y: 0}
+  playerSprite: {fileID: 7801165146814088903}
+  gunSprite: {fileID: 768539278296373172}
+  cam: {fileID: 6181665293357097729}
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -430,7 +439,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5.625
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

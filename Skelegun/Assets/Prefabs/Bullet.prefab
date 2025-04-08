@@ -177,8 +177,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3729557876653803061}
-  damage: 0
-  speed: 50
+  damage: 1
+  speed: 25
   size: 0
   sprite: {fileID: 8901375056303551177}
 --- !u!114 &3426536930070016800

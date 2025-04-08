@@ -24,9 +24,21 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag != "Player")
+        if (collision.gameObject.CompareTag("Enemy")) // Use CompareTag for better performance
         {
-            Destroy(gameObject);
+            // Get the enemy health component
+            EnemyHP enemyHealth = collision.gameObject.GetComponent<EnemyHP>(); // Fix the error
+
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(damage); // Deal damage
+            }
+
+            Destroy(gameObject); // Destroy the projectile after collision
+        }
+        else if (!collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject); // Destroy the projectile on other collisions (e.g., environment)
         }
     }
 
