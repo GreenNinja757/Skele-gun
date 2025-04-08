@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: 2D Top Down Shooter
-  defaultCursor: {fileID: 2800000, guid: c806eb85f757ed5449baac8a59f4ca9f, type: 3}
+  defaultCursor: {fileID: 2800000, guid: 94ed657f70999684cb5a621503c20e39, type: 3}
   cursorHotspot: {x: 16, y: 16}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1

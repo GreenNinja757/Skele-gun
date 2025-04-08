@@ -1,11 +1,14 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float speed;
-    public int damage;
     public Rigidbody2D rb;
+
+    public int damage;
+    public float speed;
+    public int size;
+
+    public SpriteRenderer sprite;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

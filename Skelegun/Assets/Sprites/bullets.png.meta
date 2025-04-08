@@ -57,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -131,8 +131,8 @@ TextureImporter:
       name: bullets_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 240
+        x: 0
+        y: 224
         width: 16
         height: 16
       alignment: 0
@@ -153,8 +153,8 @@ TextureImporter:
       name: bullets_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 240
+        x: 16
+        y: 224
         width: 16
         height: 16
       alignment: 0
@@ -175,8 +175,8 @@ TextureImporter:
       name: bullets_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 240
+        x: 0
+        y: 208
         width: 16
         height: 16
       alignment: 0
@@ -189,6 +189,94 @@ TextureImporter:
       bones: []
       spriteID: 2c3aa2ea555c4b74499b88c93abd889a
       internalID: 2026675016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4447768f7a092246a2b8f06ef60fe33
+      internalID: 1285167565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe4b9d8e2555074187cc8f825874d57
+      internalID: 1771008835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d78358c66975c643a4de5be0001c8ca
+      internalID: 1119654764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e153062b54588cc4294d7c91e9b97604
+      internalID: 1319593071
       vertices: []
       indices: 
       edges: []
@@ -211,6 +299,10 @@ TextureImporter:
       bullets_1: 1115682805434658061
       bullets_2: 5056628667063805970
       bullets_3: 2026675016
+      bullets_4: 1285167565
+      bullets_5: 1771008835
+      bullets_6: 1119654764
+      bullets_7: 1319593071
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
