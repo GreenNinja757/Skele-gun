@@ -19,10 +19,8 @@ public class Chest : MonoBehaviour
 
     void spawnItem()
     {
-        //pick if item or weapon
-
         //pick rarity
         
-        //pick item or weapon within selected rarity
+        //pick item within selected rarity
     }
 }
