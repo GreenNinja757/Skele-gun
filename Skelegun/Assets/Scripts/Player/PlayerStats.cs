@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public HUDManager playerHUD;
+    public PlayerHUD playerHUD;
 
     public int maxHealth;
     public int currentHealth;
     public int money;
-    public int moveSpeed;
+    public float moveSpeed;
 
     void Start()
     {
@@ -15,12 +15,10 @@ public class PlayerStats : MonoBehaviour
         maxHealth = 10;
         currentHealth = maxHealth;
         money = 0;
-        moveSpeed = 5;
-        //playerHUD.updateHUD();
-    }
+        moveSpeed = 5f;
 
-    void Update()
-    {
-        
+        playerHUD.UpdateHealth();
+        playerHUD.UpdateAmmo();
+        playerHUD.UpdateMoney();
     }
 }

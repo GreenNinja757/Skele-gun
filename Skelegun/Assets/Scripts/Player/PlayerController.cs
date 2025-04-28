@@ -15,9 +15,15 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public SpriteRenderer sprite;
     public Transform weaponRotationPoint;
+<<<<<<< Updated upstream
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
     public Rigidbody2D rb;
+=======
+    public Transform weaponSpawnPoint;
+    public Transform bulletSpawnPoint;
+    public GameObject bulletPrefab;
+>>>>>>> Stashed changes
     public float moveSpeed;
     public float bulletSpeed;
     public Vector2 horMov;
