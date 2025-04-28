@@ -5,6 +5,12 @@ public class CameraController : MonoBehaviour
     public Camera cam;
     public Transform player;
 
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
     void AimCamera()
     {
         float newCamX = (cam.ScreenToWorldPoint(Input.mousePosition).x + player.position.x) / 2f;
