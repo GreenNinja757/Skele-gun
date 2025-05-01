@@ -9,6 +9,7 @@ public class EnemyHP : MonoBehaviour
     {
         currentHealth = maxHealth;
     }
+
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
@@ -19,6 +20,7 @@ public class EnemyHP : MonoBehaviour
             Die();
         }
     }
+
     private void Die()
     {
         Debug.Log("Enemy defeated!");

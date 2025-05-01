@@ -2,17 +2,24 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
-
 {
-    public string nextScene;
+    public string sceneName;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") )
         {
-            SceneManager.LoadScene(nextScene);
+            other.transform.position = Vector3.zero;
+            SceneManager.LoadScene(sceneName);
         }
     }
-    public void quitGame()
+
+    public void LoadScene(string sceneName) 
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void QuitGame()
     {
         Application.Quit();
     }

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7163678891314909090}
-  - component: {fileID: 4343942965142622189}
+  - component: {fileID: 5049481014604330850}
   - component: {fileID: 6234088095401635951}
   - component: {fileID: 1090129649708867645}
   m_Layer: 0
@@ -34,8 +34,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &4343942965142622189
-CircleCollider2D:
+--- !u!61 &5049481014604330850
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -69,7 +69,17 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.17, y: 0.17}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.5, y: 1}
+  m_EdgeRadius: 0
 --- !u!50 &6234088095401635951
 Rigidbody2D:
   serializedVersion: 5
@@ -141,7 +151,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2782341204894616949, guid: 2a898a118ce315c4e9f3b0ba33a47a50, type: 3}
+  m_Sprite: {fileID: -8108438390446734492, guid: 2a898a118ce315c4e9f3b0ba33a47a50, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
