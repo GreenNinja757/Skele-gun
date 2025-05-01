@@ -33,18 +33,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "NextWeapon",
+                    "name": "SwitchWeapon",
                     "type": "Button",
                     "id": "359f32b9-79e2-4719-a568-461565ce2701",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "PreviousWeapon",
-                    "type": "Button",
-                    "id": "41248815-d8b2-4a63-962a-ad3e7fb29c47",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -175,17 +166,6 @@
                 },
                 {
                     "name": "",
-                    "id": "3ea4d645-4504-4529-b061-ab81934c3752",
-                    "path": "<Joystick>/stick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Joystick",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "c1f7a91b-d0fd-4a62-997e-7fb9b69bf235",
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
@@ -208,17 +188,6 @@
                 },
                 {
                     "name": "",
-                    "id": "3e5f5442-8668-4b27-a940-df99bad7e831",
-                    "path": "<Joystick>/{Hatswitch}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Joystick",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "6267cad0-b16b-462c-b261-ce11034d5327",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
@@ -229,26 +198,37 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "6025d2b7-bf20-458c-9cd0-860b408233e8",
-                    "path": "",
+                    "name": "1D Axis",
+                    "id": "dc64db59-352f-4760-aaf6-114379e88954",
+                    "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "NextWeapon",
-                    "isComposite": false,
+                    "action": "SwitchWeapon",
+                    "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "fef7bd40-e4b7-4544-ba63-906a1581892b",
-                    "path": "",
+                    "name": "Negative",
+                    "id": "ac093b6e-f4f9-4cf6-a034-b22d71edb6a5",
+                    "path": "<Mouse>/scroll/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PreviousWeapon",
+                    "action": "SwitchWeapon",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Positive",
+                    "id": "c88e7981-946c-424d-893e-b6a504b100ef",
+                    "path": "<Mouse>/scroll/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchWeapon",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         },

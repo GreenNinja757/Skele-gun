@@ -128,7 +128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 450592430}
   m_Layer: 0
-  m_Name: RoomHolder
+  m_Name: Room Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -266,14 +266,14 @@ MonoBehaviour:
   - {fileID: 5719287411591701039, guid: 69d8389f75ac32f4f85662da08f32c8b, type: 3}
   - {fileID: 8104730318765636805, guid: e8803ab86acdf5346ac86a9e6b70b4a6, type: 3}
   finalRoomPrefab: {fileID: 4412693998392482460, guid: c12b40da94aaccd4cb6f336ba268278f, type: 3}
-  maxRooms: 7
+  maxRooms: 5
   roomsParent: {fileID: 450592430}
-  roomSize: 13
+  roomSize: 25
   normalEnemyPrefabs:
   - {fileID: 1745235324792245407, guid: faa7855f324799542959d52b30d3f512, type: 3}
   finalRoomEnemyPrefabs:
-  - {fileID: 5981741219870293262, guid: 333ca2bee9169274f900fbf6ef30bd37, type: 3}
-  nextLevelSceneName: NextLevel
+  - {fileID: 1745235324792245407, guid: faa7855f324799542959d52b30d3f512, type: 3}
+  nextLevelSceneName: Level3
   finalRoomTeleporterName: FinalTeleporter
 --- !u!4 &2139994752
 Transform:

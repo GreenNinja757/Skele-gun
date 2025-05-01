@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
+    public int damage;
     public float moveSpeed = 3f;
     public Transform player; // Reference to the player's transform
     public float chaseDistance = 5f; // Distance at which the enemy starts chasing
@@ -13,6 +14,7 @@ public class EnemyAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = FindAnyObjectByType<PlayerController>().transform;
         rb = GetComponent<Rigidbody2D>(); // Get the enemy's Rigidbody2D
         playerRb = player.GetComponent<Rigidbody2D>(); // Get the player's Rigidbody2D
     }
@@ -26,10 +28,6 @@ public class EnemyAI : MonoBehaviour
             Vector2 direction = (player.position - transform.position).normalized;
             rb.linearVelocity = direction * moveSpeed; // Apply velocity to move
         }
-        else
-        {
-            rb.linearVelocity = Vector2.zero; // Stop moving when out of chase range
-        }
     }
 
     // When enemy hits the player, apply pushback
@@ -40,6 +38,10 @@ public class EnemyAI : MonoBehaviour
             // Apply a pushback force to the player
             Vector2 pushDirection = collision.transform.position - transform.position;
             playerRb.AddForce(pushDirection.normalized * pushbackForce, ForceMode2D.Impulse);
+
+            //Deal damage to the player
+            player.GetComponent<PlayerController>().TakeDamage(damage);
+            player.GetComponent<PlayerHUD>().UpdateHUD();
         }
     }
 }
