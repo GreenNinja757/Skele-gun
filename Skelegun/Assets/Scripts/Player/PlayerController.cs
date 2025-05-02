@@ -18,18 +18,17 @@ public class PlayerController : MonoBehaviour
     public Transform bulletSpawnPoint;
 
     public Animator animator;
-
     public AudioManager audio;
 
     public Camera cam;
-
     public bool isHeld;
 
-    //This moves the player
-    void Move()
-    {
-        rb.linearVelocity = playerInput.actions["Move"].ReadValue<Vector2>() * stats.moveSpeed;
-    }
+    private bool isKnockedBack = false;
+    private float knockbackTimer = 0f;
+    private Vector2 moveInput = Vector2.zero;
+
+
+
 
     //The aims the gun at the cursor
     void Aim()
@@ -150,21 +149,67 @@ public class PlayerController : MonoBehaviour
     {
         stats.currentHealth -= damage;
 
-        if (stats.currentHealth <= stats.maxHealth)
+        if (stats.currentHealth >= stats.maxHealth) // This was <=, I assume that was a misinput
         {
             stats.currentHealth = stats.maxHealth;
         }
+        if (stats.currentHealth <= 0)
+        {
+            Die();
+        }
+
 
         hud.UpdateHUD();
     }
 
+    private void Die()
+    {
+        Debug.Log("You're Dead");
+    }
+
+
     void Update()
     {
-        Move();
+
+
+        ReadMovement(); //This is cached inputs- we need this here otherwise pushing doesn't work, same reason base Move is gone
         Aim();
         Shoot();
         SwitchWeapon();
         OrientSprites();
         Animate();
     }
+
+    void FixedUpdate()
+    {
+        // During knockback, skip normal movement
+        if (isKnockedBack)
+        {
+            knockbackTimer -= Time.fixedDeltaTime;
+            if (knockbackTimer <= 0f)
+                isKnockedBack = false;
+            return;
+        }
+        rb.linearVelocity = moveInput * stats.moveSpeed;
+    }
+
+
+
+    //This moves the player
+    void ReadMovement()
+    {
+            moveInput = playerInput.actions["Move"].ReadValue<Vector2>();
+    }
+
+    public void ApplyKnockback(Vector2 direction, float strength, float duration)
+    {
+        rb.linearVelocity = direction.normalized * strength;
+        isKnockedBack = true;
+        knockbackTimer = duration;
+    }
+
+
+
+
 }
+

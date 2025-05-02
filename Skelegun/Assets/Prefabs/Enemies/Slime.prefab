@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6363146157590759785}
   - component: {fileID: -4577334500865258550}
   - component: {fileID: 6973154705313399818}
+  - component: {fileID: 1265867020911920458}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Enemy
@@ -46,7 +47,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 29679b12e9458f24798cb3d6275fdb50, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -90,7 +91,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3112308875580206415}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -107,8 +108,8 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!212 &6363146157590759785
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -178,9 +179,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 2
   moveSpeed: 3
-  player: {fileID: 0}
+  knockbackStrength: 5
   chaseDistance: 5
-  pushbackForce: 5
+  knockbackDuration: 0.3
+  playerTran: {fileID: 0}
 --- !u!114 &6973154705313399818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,3 +196,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
+--- !u!95 &1265867020911920458
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3112308875580206415}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fe345b1b0b83e6e49948c8aee5ba4a27, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

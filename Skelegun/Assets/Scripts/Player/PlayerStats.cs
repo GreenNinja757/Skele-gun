@@ -32,4 +32,5 @@ public class PlayerStats : MonoBehaviour
         money = 0;
         moveSpeed = 5;
     }
+
 }
