@@ -4125,7 +4125,7 @@ GameObject:
   - component: {fileID: 1134197833}
   - component: {fileID: 1134197832}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: DoorStuck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5218,7 +5218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6181665293357097729, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: orthographic size
-      value: 8.296875
+      value: 5.8828125
       objectReference: {fileID: 0}
     - target: {fileID: 6411921418751905881, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: m_AnchorMax.y

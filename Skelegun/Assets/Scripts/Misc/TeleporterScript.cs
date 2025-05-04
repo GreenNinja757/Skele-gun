@@ -11,9 +11,19 @@ public class TeleporterScript : MonoBehaviour
     private static bool isTeleporting = false;  // Shared Teleporter Cooldown 
     private static float teleportCooldown = 2f;  // Delay to prevent looping
     private static Image fader;
+    public Sprite usedSprite;
+    private SpriteRenderer spriteRenderer;
+    private bool hasBeenUsed = false;
+    public bool requireRoomClear = true;
+    public EnemyChecker roomController;
+
 
     private void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer == null)
+            Debug.LogWarning("TeleporterScript: No SpriteRenderer found on teleporter.");
+
         if (fader == null)
         {
             fader = GameObject.Find("fader")?.GetComponent<Image>();
@@ -21,10 +31,18 @@ public class TeleporterScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && !isTeleporting)
+        if (!other.CompareTag("Player") || isTeleporting || hasBeenUsed)
+            return;
+
+        // Check room clear requirement
+        if (requireRoomClear && roomController != null && !roomController.allEnemiesCleared)
         {
-            StartCoroutine(TeleportPlayer(other.transform));
+            // Optionally: show a UI message here to remind player
+            Debug.Log("Cannot teleport until all enemies are defeated.");
+            return;
         }
+
+        StartCoroutine(TeleportPlayer(other.transform));
     }
     private IEnumerator TeleportPlayer(Transform player)
     {
@@ -43,6 +61,11 @@ public class TeleporterScript : MonoBehaviour
         yield return StartCoroutine(FadeScreen(0f));
         yield return new WaitForSeconds(teleportCooldown);
         isTeleporting = false;
+        hasBeenUsed = true;
+        if (usedSprite != null && spriteRenderer != null)
+            spriteRenderer.sprite = usedSprite;
+
+
     }
     public void SetDestination(Vector3 targetPosition)
     {
@@ -94,3 +117,5 @@ public class TeleporterScript : MonoBehaviour
 
 
 
+
+ 
