@@ -155,8 +155,12 @@ MonoBehaviour:
   roomSize: 25
   normalEnemyPrefabs:
   - {fileID: 3112308875580206415, guid: 0b9433e7d658e0f4ca57153af29aac4f, type: 3}
+  - {fileID: 9179586791282059436, guid: 90c09382ef1127c418ac4a383bdbf4f9, type: 3}
+  - {fileID: 1745235324792245407, guid: faa7855f324799542959d52b30d3f512, type: 3}
+  - {fileID: 8977058637153017395, guid: 41ae421f3f7ea4f44a041bd0a8725f26, type: 3}
+  - {fileID: 2475092649557354108, guid: b32dd723b4a8ce84c86b3fbd339de45b, type: 3}
   finalRoomEnemyPrefabs:
-  - {fileID: 3112308875580206415, guid: 0b9433e7d658e0f4ca57153af29aac4f, type: 3}
+  - {fileID: 5328861631183045750, guid: 54c412348e6501648864e0e891bf8c47, type: 3}
   nextLevelSceneName: Level2
   finalRoomTeleporterName: FinalTeleporter
 --- !u!4 &322579798

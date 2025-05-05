@@ -72,6 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3543262603052755251}
   - component: {fileID: 9212077183579967125}
+  - component: {fileID: 8373244788470866081}
   m_Layer: 3
   m_Name: Level 1 Room
   m_TagString: Untagged
@@ -110,37 +111,20 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!1 &3189416710309535940
-GameObject:
+--- !u!114 &8373244788470866081
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5384922149768634184}
-  m_Layer: 0
-  m_Name: EnemySpawn C
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5384922149768634184
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3189416710309535940}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1394299031240859494}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 1399938781785284468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ff80b86dca141418316c951914eda3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyAOE: {fileID: 3543262603052755251}
+  liveEnemies: []
 --- !u!1 &3792029596640097560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,6 +998,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFinalExit: 0
   nextLevelScene: 
+  usedSprite: {fileID: 6470218713357066937, guid: bfadd8e6386cf3341ba2baab97805660, type: 3}
+  requireRoomClear: 1
+  roomController: {fileID: 8373244788470866081}
 --- !u!61 &2558374739079182614
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1110,6 +1097,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFinalExit: 0
   nextLevelScene: 
+  usedSprite: {fileID: 6470218713357066937, guid: bfadd8e6386cf3341ba2baab97805660, type: 3}
+  requireRoomClear: 1
+  roomController: {fileID: 8373244788470866081}
 --- !u!1 &4570671470612128738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,6 +1203,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFinalExit: 0
   nextLevelScene: 
+  usedSprite: {fileID: 6470218713357066937, guid: bfadd8e6386cf3341ba2baab97805660, type: 3}
+  requireRoomClear: 1
+  roomController: {fileID: 8373244788470866081}
 --- !u!61 &3206521475197776074
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1362,6 +1355,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFinalExit: 0
   nextLevelScene: 
+  usedSprite: {fileID: 6470218713357066937, guid: bfadd8e6386cf3341ba2baab97805660, type: 3}
+  requireRoomClear: 1
+  roomController: {fileID: 8373244788470866081}
 --- !u!61 &3841861465533852581
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2907,6 +2903,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFinalExit: 0
   nextLevelScene: 
+  usedSprite: {fileID: 6470218713357066937, guid: bfadd8e6386cf3341ba2baab97805660, type: 3}
+  requireRoomClear: 1
+  roomController: {fileID: 8373244788470866081}
 --- !u!61 &3920840060306338704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2986,7 +2985,6 @@ Transform:
   - {fileID: 495720433515650310}
   - {fileID: 1963007116021406878}
   - {fileID: 8423567030430307963}
-  - {fileID: 5384922149768634184}
   m_Father: {fileID: 3543262603052755251}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8452324051211034276

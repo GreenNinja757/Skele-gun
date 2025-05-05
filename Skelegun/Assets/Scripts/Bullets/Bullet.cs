@@ -24,7 +24,7 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy")) // Use CompareTag for better performance
+        if (collision.gameObject.CompareTag("Enemy")) 
         {
             // Get the enemy health component
             EnemyHP enemyHealth = collision.gameObject.GetComponent<EnemyHP>(); // Fix the error

@@ -40,7 +40,7 @@ public class PlayerHUD : MonoBehaviour
             ammoValue.text = inventory.equippedWeapon.currentAmmo + "/" + inventory.equippedWeapon.maxAmmo;
         } else
         {
-            ammoValue.text = "0/0";
+            ammoValue.text = "\u221E/\u221E";
         }
     }
 }

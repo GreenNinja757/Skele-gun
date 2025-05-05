@@ -1,9 +1,11 @@
 using UnityEngine;
+using System;
 
 public class EnemyHP : MonoBehaviour
 {
     public int maxHealth = 3;
     private int currentHealth;
+    public event Action<EnemyHP> OnDeath;
 
     private void Start()
     {
@@ -21,9 +23,10 @@ public class EnemyHP : MonoBehaviour
         }
     }
 
-    private void Die()
+    public void Die()
     {
         Debug.Log("Enemy defeated!");
+        OnDeath?.Invoke(this);
         Destroy(gameObject);
     }
 }

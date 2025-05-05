@@ -103,6 +103,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFinalExit: 1
   nextLevelScene: Level2
+  usedSprite: {fileID: 0}
+  requireRoomClear: 1
+  roomController: {fileID: 6883234985294479509}
 --- !u!61 &3127063881773357372
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -157,6 +160,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 495720433515650310, guid: 9814ae3db13411f43892083a97fb391e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 495720433515650310, guid: 9814ae3db13411f43892083a97fb391e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.54
+      objectReference: {fileID: 0}
     - target: {fileID: 1399938781785284468, guid: 9814ae3db13411f43892083a97fb391e, type: 3}
       propertyPath: m_Name
       value: Level 1 Final Room
@@ -164,6 +175,14 @@ PrefabInstance:
     - target: {fileID: 1399938781785284468, guid: 9814ae3db13411f43892083a97fb391e, type: 3}
       propertyPath: m_TagString
       value: Finish
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963007116021406878, guid: 9814ae3db13411f43892083a97fb391e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963007116021406878, guid: 9814ae3db13411f43892083a97fb391e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.49
       objectReference: {fileID: 0}
     - target: {fileID: 2223499367859241731, guid: 9814ae3db13411f43892083a97fb391e, type: 3}
       propertyPath: m_Size.x
@@ -2511,7 +2530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3189416710309535940, guid: 9814ae3db13411f43892083a97fb391e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3543262603052755251, guid: 9814ae3db13411f43892083a97fb391e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5845,6 +5864,14 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[141].second.m_TileObjectToInstantiateIndex
       value: 65535
       objectReference: {fileID: 0}
+    - target: {fileID: 6413234107353949389, guid: 9814ae3db13411f43892083a97fb391e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 6413234107353949389, guid: 9814ae3db13411f43892083a97fb391e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 6577134627042603094, guid: 9814ae3db13411f43892083a97fb391e, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.size
       value: 2
@@ -8053,6 +8080,14 @@ PrefabInstance:
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[8].Array.data[11].Y
       value: -60000000
       objectReference: {fileID: 0}
+    - target: {fileID: 8423567030430307963, guid: 9814ae3db13411f43892083a97fb391e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423567030430307963, guid: 9814ae3db13411f43892083a97fb391e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.54
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5210640211646303911, guid: 9814ae3db13411f43892083a97fb391e, type: 3}
@@ -8067,3 +8102,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4145701912998521874, guid: 9814ae3db13411f43892083a97fb391e, type: 3}
   m_PrefabInstance: {fileID: 3149586266265657396}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6883234985294479509 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8373244788470866081, guid: 9814ae3db13411f43892083a97fb391e, type: 3}
+  m_PrefabInstance: {fileID: 3149586266265657396}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ff80b86dca141418316c951914eda3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

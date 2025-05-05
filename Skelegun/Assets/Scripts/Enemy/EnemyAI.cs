@@ -2,46 +2,84 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
+
+    [Header("Stats")]
     public int damage;
     public float moveSpeed = 3f;
-    public Transform player; // Reference to the player's transform
+    public float knockbackStrength = 8f;
     public float chaseDistance = 5f; // Distance at which the enemy starts chasing
-    public float pushbackForce = 5f; // Force applied to the player when hit
-
+    public float knockbackDuration = .3f;
     private Rigidbody2D rb;
-    private Rigidbody2D playerRb;
+    private bool beenPushed = false;
 
+
+    [Header("PlayerInfo")]
+    private Rigidbody2D playerRb;
+    public Transform playerTran; 
+    private PlayerStats playerStats;
+    private PlayerHUD playerHUD;
+
+
+    
     // Start is called before the first frame update
     void Start()
     {
-        player = FindAnyObjectByType<PlayerController>().transform;
+        playerTran = FindAnyObjectByType<PlayerController>().transform;
+        playerRb = playerTran.GetComponent<Rigidbody2D>(); 
+        playerStats = playerTran.GetComponent<PlayerStats>();
+        playerHUD = playerTran.GetComponent<PlayerHUD>();
+        //Get all the PlayerInfo
+
         rb = GetComponent<Rigidbody2D>(); // Get the enemy's Rigidbody2D
-        playerRb = player.GetComponent<Rigidbody2D>(); // Get the player's Rigidbody2D
+
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
+
     {
-        if (Vector2.Distance(transform.position, player.position) <= chaseDistance)
+        float distToPlayer = Vector2.Distance(transform.position, playerTran.position);
+        if (distToPlayer <= chaseDistance)
         {
             // Move towards the player
-            Vector2 direction = (player.position - transform.position).normalized;
-            rb.linearVelocity = direction * moveSpeed; // Apply velocity to move
+            Vector2 direction = (playerTran.position - transform.position).normalized;
+            rb.linearVelocity = direction * moveSpeed;
+        }
+
+        else if (!beenPushed)
+        {
+            // Stop moving if out of range or after knockback
+            rb.linearVelocity = Vector2.zero;
+        }
+
+    }
+
+
+
+
+    //If this code looks janky, it really is, getting the Enemies to do a proper knockback was way harder than it should've been for some reason
+    void OnCollisionEnter2D(Collision2D coleTrain)
+    {
+        if (coleTrain.gameObject.CompareTag("Player") && !beenPushed)
+        {
+            beenPushed = true;
+            var playCon = coleTrain.gameObject.GetComponent<PlayerController>();
+            if (playCon != null)
+            {
+                Vector2 pushDirection = (playCon.rb.position - rb.position).normalized;  //Get Direction
+                playCon.ApplyKnockback(pushDirection, knockbackStrength, knockbackDuration);
+                playCon.TakeDamage(damage);
+            }
+             
         }
     }
 
-    // When enemy hits the player, apply pushback
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionExit2D(Collision2D coleTrain)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (coleTrain.gameObject.CompareTag("Player"))
         {
-            // Apply a pushback force to the player
-            Vector2 pushDirection = collision.transform.position - transform.position;
-            playerRb.AddForce(pushDirection.normalized * pushbackForce, ForceMode2D.Impulse);
-
-            //Deal damage to the player
-            player.GetComponent<PlayerController>().TakeDamage(damage);
-            player.GetComponent<PlayerHUD>().UpdateHUD();
+            // Allow next knockback once fully separated
+            beenPushed = false;
         }
+
     }
 }
