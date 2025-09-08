@@ -25,7 +25,6 @@ public class RoomSpawner : MonoBehaviour
 
     private Vector2[] directions = { Vector2.up, Vector2.down, Vector2.left, Vector2.right };
 
-
     void Awake()
     {
         // Ensure fresh initialization on scene load
@@ -33,7 +32,6 @@ public class RoomSpawner : MonoBehaviour
         roomPositions = new List<Vector2>();
         spawnedRooms = new List<GameObject>();
     }
-
 
     void Start()
     {
@@ -126,7 +124,6 @@ public class RoomSpawner : MonoBehaviour
     }
 
 
-
     GameObject SpawnRoom(Vector2 position)
     {
         // For simplicity, we always choose a room from roomPrefabs.
@@ -210,8 +207,6 @@ public class RoomSpawner : MonoBehaviour
             }
         }
     }
-
-
 
     void HideTeleporterSprite(Transform teleporterTransform)
     {

@@ -17,7 +17,7 @@ public class Chest : MonoBehaviour
         }
     }
 
-    void spawnItem()
+    void SpawnItem()
     {
         //pick rarity
         

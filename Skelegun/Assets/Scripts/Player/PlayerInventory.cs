@@ -5,6 +5,7 @@ using UnityEngine.U2D;
 public class PlayerInventory : MonoBehaviour
 {
     public PlayerController player;
+    public PlayerStats stats;
     public PlayerHUD hud;
 
     public List<Item> itemInventory; 
@@ -13,14 +14,25 @@ public class PlayerInventory : MonoBehaviour
     public Weapon equippedWeapon;
     public int equipSlot;
 
+    public AudioClip pickupSFX;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Item")
+        if (collision.CompareTag("Item"))
         {
-            itemInventory.Add(collision.gameObject.GetComponent<Item>());
-            collision.gameObject.SetActive(false);
+            var item = collision.GetComponent<Item>();
+            item.GetComponent<IPlayerUpgrade>()?.ApplyPlayerUpgrade();
+            item.GetComponent<SpriteRenderer>().sortingOrder = 0;
+            item.transform.SetPositionAndRotation(player.transform.position, player.transform.rotation);
+            item.transform.localScale = player.transform.localScale;
+            item.transform.parent = player.transform;
+            itemInventory.Add(item);
+            item.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            item.GetComponent<SpriteRenderer>().enabled = false;
+            StopAllCoroutines();
+            StartCoroutine(hud.DisplayPickupMessage(item.itemSprite.sprite, item.nameText, item.flavorText));
         } 
-        else if (collision.tag == "Weapon")
+        else if (collision.CompareTag("Weapon"))
         {
             if (equippedWeapon != null)
             {
@@ -31,15 +43,28 @@ public class PlayerInventory : MonoBehaviour
                 }
             }
             var weapon = collision.gameObject.GetComponent<Weapon>();
+            weapon.GetComponent<SpriteRenderer>().sortingOrder = 2;
             weapon.transform.SetPositionAndRotation(player.weaponSpawnPoint.position, player.weaponRotationPoint.rotation);
+            weapon.transform.localScale = player.weaponRotationPoint.localScale;
             weapon.transform.parent = player.weaponSpawnPoint;
             weaponInventory.Add(weapon);
             equippedWeapon = weaponInventory[weaponInventory.Count - 1];
             equippedWeapon.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            equippedWeapon.SetStats();
             equipSlot++;
-        }
 
+            StopAllCoroutines();
+            StartCoroutine(hud.DisplayPickupMessage(weapon.weaponSprite.sprite, weapon.nameText, weapon.flavorText));
+        }
+        else if (collision.CompareTag("Pickup"))
+        {
+            collision.GetComponent<Pickup>().OnPickup();
+            Destroy(collision.gameObject);
+        }
         hud.UpdateHUD();
+
+        var AudioManager = FindAnyObjectByType<AudioManager>();
+        AudioManager.PlaySFX(pickupSFX);
     }
     
     public void NextWeapon()
@@ -65,8 +90,8 @@ public class PlayerInventory : MonoBehaviour
             {
                 equippedWeapon.GetComponent<Light2DBase>().enabled = true;
             }
+            equippedWeapon.SetStats();
         }
-
         hud.UpdateHUD();
     }
 
@@ -93,8 +118,8 @@ public class PlayerInventory : MonoBehaviour
             {
                 equippedWeapon.GetComponent<Light2DBase>().enabled = true;
             }
+            equippedWeapon.SetStats();
         }
-
         hud.UpdateHUD();
     }
 }

@@ -1,36 +1,116 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class PlayerStats : MonoBehaviour
 {
-    public PlayerHUD playerHUD;
+    public PlayerController player;
+    public PlayerHUD hud;
 
-    public int maxHealth;
-    public int currentHealth;
-    public int currentShield;
+    [Header("Base Player Stats")]
+    public float maxHealth;
+    public float currentHealth;
+    public float shield;
+    public float moveSpeed;
+    public float size;
     public int money;
-    public int moveSpeed;
+    public int keys;
+
+    [Header("Bonus Player Stats")]
+    public int bonusMaxHealth;
     public int bonusHealth;
-    public int bonusMoveSpeed;
-    public int bonusFireRate;
+    public int bonusShield;
     public int bonusAmmo;
-    public int bonusDamage;
     public int bonusMoney;
+    public int bonusMoveSpeed;
+    public int bonusSize;
+
+    [Header("Bonus Weapon Stats")]
+    public float bonusBulletDamage;
+    public float bonusFireRate;
+    public float bonusBulletSpeed;
+    public float bonusBulletSize;
+    public float bonusAccuracy;
+    public int bonusMaxAmmo;
+    public int currentAmmo;
+    public int ammoCost;
     public int bonusPyroDamage;
     public int bonusCryoDamage;
     public int bonusElectroDamage;
 
-    void Awake()
+    public bool isInvincible;
+
+    public void GiveHealth(float health)
     {
-        DontDestroyOnLoad(gameObject);
+        currentHealth += health;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
     }
 
-    void Start()
+    public void GiveShield(float shield)
     {
-        maxHealth = 10;
-        currentHealth = maxHealth;
-        currentShield = 0;
-        money = 0;
-        moveSpeed = 5;
+        this.shield += shield;
+        if (this.shield > maxHealth)
+        {
+            this.shield = maxHealth;
+        }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        if (!isInvincible && player.isAlive)
+        {
+            if (shield > 0)
+            {
+                shield -= damage;
+
+                if (shield <= 0)
+                {
+                    shield = 0;
+                }
+            } 
+            else
+            {
+                currentHealth -= damage;
+
+                if (currentHealth <= 0)
+                {
+                    currentHealth = 0;
+                    player.isAlive = false;
+
+                    Die();
+                }
+            }
+
+            Mathf.Round(currentHealth);
+
+            StartCoroutine(nameof(InvincibilityTimer));
+            hud.UpdateHUD();
+        }
+    }
+
+    public void Die()
+    {
+        player.animator.Play("Die");
+        if (player.inventory.equippedWeapon != null)
+        {
+            player.inventory.equippedWeapon.GetComponent<SpriteRenderer>().enabled = false;
+            if (player.inventory.equippedWeapon.GetComponent<Light2D>() != null)
+            {
+                player.inventory.equippedWeapon.GetComponent<Light2D>().enabled = false;
+            }
+        }
+        player.rb.constraints = RigidbodyConstraints2D.FreezePosition;
+    }
+
+    public IEnumerable InvincibilityTimer()
+    {
+        //play hurt animation
+        isInvincible = true;
+        yield return new WaitForSeconds(1f);
+        isInvincible = false;
     }
 
 }
