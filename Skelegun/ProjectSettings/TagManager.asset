@@ -7,7 +7,10 @@ TagManager:
   - Enemy
   - Item
   - Weapon
-  - Bullet
+  - Projectile
+  - Pickup
+  - Undefined
+  - EnemyProjectile
   layers:
   - Default
   - TransparentFX
@@ -15,8 +18,8 @@ TagManager:
   - Terrain
   - Water
   - UI
-  - 
-  - 
+  - Projectiles
+  - Player
   - 
   - 
   - 

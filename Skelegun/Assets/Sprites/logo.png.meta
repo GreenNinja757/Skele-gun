@@ -378,7 +378,7 @@ TextureImporter:
         width: 137
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -387,50 +387,6 @@ TextureImporter:
       bones: []
       spriteID: 5ade5f3695a3b04c0800000000000000
       internalID: -4320295261928297051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: logo_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 22
-        width: 137
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 182af24eb762b934ea50becdfd0cc90c
-      internalID: 5470614613321624601
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: logo_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 4
-        width: 137
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4fe6084ea8a8c1145b0425cdc4e2e7ba
-      internalID: 4560591551370500262
       vertices: []
       indices: 
       edges: []

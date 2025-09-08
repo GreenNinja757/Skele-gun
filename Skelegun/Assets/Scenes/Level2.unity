@@ -268,7 +268,7 @@ MonoBehaviour:
   finalRoomPrefab: {fileID: 4412693998392482460, guid: c12b40da94aaccd4cb6f336ba268278f, type: 3}
   maxRooms: 5
   roomsParent: {fileID: 450592430}
-  roomSize: 25
+  roomSize: 50
   normalEnemyPrefabs:
   - {fileID: 1745235324792245407, guid: faa7855f324799542959d52b30d3f512, type: 3}
   finalRoomEnemyPrefabs:

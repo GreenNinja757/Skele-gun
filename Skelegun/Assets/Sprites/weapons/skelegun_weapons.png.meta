@@ -1,0 +1,2022 @@
+fileFormatVersion: 2
+guid: f686feef0d18e8d4fabec11d8774cf2a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1839532847384734474
+    second: skelegun_weapons_0
+  - first:
+      213: -1006475951588327324
+    second: skelegun_weapons_1
+  - first:
+      213: -3028478991874385945
+    second: skelegun_weapons_2
+  - first:
+      213: -6307373883565300965
+    second: skelegun_weapons_3
+  - first:
+      213: 5692206782290674088
+    second: skelegun_weapons_4
+  - first:
+      213: -1420971539445788303
+    second: skelegun_weapons_5
+  - first:
+      213: -1297885137916112985
+    second: skelegun_weapons_6
+  - first:
+      213: 7519177584634614806
+    second: skelegun_weapons_7
+  - first:
+      213: 6176201651147617921
+    second: skelegun_weapons_8
+  - first:
+      213: 5760575201205567149
+    second: skelegun_weapons_9
+  - first:
+      213: -8505187549452598195
+    second: skelegun_weapons_10
+  - first:
+      213: -2856796539157931626
+    second: skelegun_weapons_11
+  - first:
+      213: -3767640716702864476
+    second: skelegun_weapons_12
+  - first:
+      213: 6081037335946271374
+    second: skelegun_weapons_13
+  - first:
+      213: 3829276399796992904
+    second: skelegun_weapons_14
+  - first:
+      213: -1420250701948878945
+    second: skelegun_weapons_15
+  - first:
+      213: 3384496151100874697
+    second: skelegun_weapons_16
+  - first:
+      213: -6826385594399427557
+    second: skelegun_weapons_17
+  - first:
+      213: 71671719098132911
+    second: skelegun_weapons_18
+  - first:
+      213: 4440791597479410721
+    second: skelegun_weapons_19
+  - first:
+      213: -6264697028225642349
+    second: skelegun_weapons_20
+  - first:
+      213: -3388880008604074030
+    second: skelegun_weapons_21
+  - first:
+      213: 8110863233600569232
+    second: skelegun_weapons_22
+  - first:
+      213: 2899344906675110463
+    second: skelegun_weapons_23
+  - first:
+      213: -3723585090664597805
+    second: skelegun_weapons_24
+  - first:
+      213: -1623657681709987352
+    second: skelegun_weapons_25
+  - first:
+      213: 3429421686179464787
+    second: skelegun_weapons_26
+  - first:
+      213: 1775008612362407251
+    second: skelegun_weapons_27
+  - first:
+      213: -6499821463570038327
+    second: skelegun_weapons_28
+  - first:
+      213: -2197965089832423621
+    second: skelegun_weapons_29
+  - first:
+      213: 6341872109158953461
+    second: skelegun_weapons_30
+  - first:
+      213: -9034898763495901026
+    second: skelegun_weapons_31
+  - first:
+      213: -7148416008306604263
+    second: skelegun_weapons_32
+  - first:
+      213: 771759391667004062
+    second: skelegun_weapons_33
+  - first:
+      213: 3954285763428501383
+    second: skelegun_weapons_34
+  - first:
+      213: -7055775218069748925
+    second: skelegun_weapons_35
+  - first:
+      213: 684197749801826544
+    second: skelegun_weapons_36
+  - first:
+      213: -5664514094341943469
+    second: skelegun_weapons_37
+  - first:
+      213: -1889457214610306416
+    second: skelegun_weapons_38
+  - first:
+      213: -4850717699785517085
+    second: skelegun_weapons_39
+  - first:
+      213: 5669587100425199444
+    second: skelegun_weapons_40
+  - first:
+      213: 8210440771976148967
+    second: skelegun_weapons_41
+  - first:
+      213: 6971871658462732573
+    second: skelegun_weapons_42
+  - first:
+      213: 1055137276029075227
+    second: skelegun_weapons_43
+  - first:
+      213: 1074936017415463896
+    second: skelegun_weapons_44
+  - first:
+      213: -6065725547540559795
+    second: skelegun_weapons_45
+  - first:
+      213: 4263482230020847792
+    second: skelegun_weapons_46
+  - first:
+      213: -4655660083000677208
+    second: skelegun_weapons_47
+  - first:
+      213: -6554330590391149349
+    second: skelegun_weapons_48
+  - first:
+      213: 5602766790384824962
+    second: skelegun_weapons_49
+  - first:
+      213: -1613625071025594427
+    second: skelegun_weapons_50
+  - first:
+      213: 8350936223076148253
+    second: skelegun_weapons_51
+  - first:
+      213: 499488972233022475
+    second: skelegun_weapons_52
+  - first:
+      213: 4751831756442308722
+    second: skelegun_weapons_53
+  - first:
+      213: 337609930048231132
+    second: skelegun_weapons_54
+  - first:
+      213: 4882438228380742790
+    second: skelegun_weapons_55
+  - first:
+      213: -3410095768369859391
+    second: skelegun_weapons_56
+  - first:
+      213: -603106482926856319
+    second: skelegun_weapons_57
+  - first:
+      213: 6302582216773475471
+    second: skelegun_weapons_58
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skelegun_weapons_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 482
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ba701e065578910800000000000000
+      internalID: 1839532847384734474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 482
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 460ca9e54774802f0800000000000000
+      internalID: -1006475951588327324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 482
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e71897076ea8f5d0800000000000000
+      internalID: -3028478991874385945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_3
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 482
+        width: 29
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b13a38ceed4b778a0800000000000000
+      internalID: -6307373883565300965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_4
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 481
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a1418ee8e7cefe40800000000000000
+      internalID: 5692206782290674088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_5
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 481
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171d46bd9e1b74ce0800000000000000
+      internalID: -1420971539445788303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_6
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 480
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af4043f75cfcfde0800000000000000
+      internalID: -1297885137916112985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_7
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 480
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 614d937cc2c795860800000000000000
+      internalID: 7519177584634614806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_8
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 480
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 186b5d5cda646b550800000000000000
+      internalID: 6176201651147617921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_9
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 481
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae38c9ef9ca1ff40800000000000000
+      internalID: 5760575201205567149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_10
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 480
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d448dc67cf087f980800000000000000
+      internalID: -8505187549452598195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 449
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6991deffeae9a58d0800000000000000
+      internalID: -2856796539157931626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_12
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 449
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aba0afdab6a6bbc0800000000000000
+      internalID: -3767640716702864476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_13
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 449
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a17f20d3f246450800000000000000
+      internalID: 6081037335946271374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_14
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 449
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88bbfa4e892542530800000000000000
+      internalID: 3829276399796992904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_15
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 449
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f765ae2814a4ce0800000000000000
+      internalID: -1420250701948878945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_16
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 447
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf5b0e415528fe20800000000000000
+      internalID: 3384496151100874697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_17
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 447
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b147af9387ec341a0800000000000000
+      internalID: -6826385594399427557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_18
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 447
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9294d7c01aef000800000000000000
+      internalID: 71671719098132911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_19
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 447
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12cbc49fd6cd0ad30800000000000000
+      internalID: 4440791597479410721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_20
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 448
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3905a2f9e335f09a0800000000000000
+      internalID: -6264697028225642349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_21
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 447
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df3bb4569748f0d0800000000000000
+      internalID: -3388880008604074030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_22
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 450
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09fb98443239f8070800000000000000
+      internalID: 8110863233600569232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 417
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3245bbc4da8c3820800000000000000
+      internalID: 2899344906675110463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_24
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 417
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d6fef3a61b235cc0800000000000000
+      internalID: -3723585090664597805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_25
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 416
+        width: 39
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e987d4e0fb9779e0800000000000000
+      internalID: -1623657681709987352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_26
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 417
+        width: 39
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3568fbd8ad0c79f20800000000000000
+      internalID: 3429421686179464787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 385
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35dce15bde812a810800000000000000
+      internalID: 1775008612362407251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_28
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 383
+        width: 41
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c1c27001defbc5a0800000000000000
+      internalID: -6499821463570038327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_29
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 384
+        width: 49
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f24d765624f71e0800000000000000
+      internalID: -2197965089832423621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_30
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 384
+        width: 42
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f17065251bd20850800000000000000
+      internalID: 6341872109158953461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_31
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 383
+        width: 41
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e98f53c81779d9280800000000000000
+      internalID: -9034898763495901026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9174b2ea389bbcc90800000000000000
+      internalID: -7148416008306604263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_33
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 352
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e922268e317d5ba00800000000000000
+      internalID: 771759391667004062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_34
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 350
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7874a8d73f170e630800000000000000
+      internalID: 3954285763428501383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 343c2ff72d9d41e90800000000000000
+      internalID: -7055775218069748925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_36
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 320
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f83f097a32ce7900800000000000000
+      internalID: 684197749801826544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_37
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 319
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f0e8d617a9361b0800000000000000
+      internalID: -5664514094341943469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_38
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 320
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a8ad09cac47c5e0800000000000000
+      internalID: -1889457214610306416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_39
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 320
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e79596c3f9ceacb0800000000000000
+      internalID: -4850717699785517085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_40
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 319
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f1bf7dd6b6eae40800000000000000
+      internalID: 5669587100425199444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_41
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 320
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e7b50f916851f170800000000000000
+      internalID: 8210440771976148967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_42
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 320
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d11e846b55011c060800000000000000
+      internalID: 6971871658462732573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_43
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 319
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f7cfe13c994ae00800000000000000
+      internalID: 1055137276029075227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d36252dc90faee00800000000000000
+      internalID: 1074936017415463896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_45
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 288
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4845d980c632dba0800000000000000
+      internalID: -6065725547540559795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_46
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 287
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b83592df7eea2b30800000000000000
+      internalID: 4263482230020847792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_47
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac67cd32d5c36fb0800000000000000
+      internalID: -4655660083000677208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_48
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 288
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdc524bed075a05a0800000000000000
+      internalID: -6554330590391149349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_49
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 287
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2823e3c06b601cd40800000000000000
+      internalID: 5602766790384824962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_50
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cfdad81c804b99e0800000000000000
+      internalID: -1613625071025594427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_51
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 288
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14656eef3c74e370800000000000000
+      internalID: 8350936223076148253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_52
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 287
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c9c27e29a8ee600800000000000000
+      internalID: 499488972233022475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2701a236ec5e1f140800000000000000
+      internalID: 4751831756442308722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_54
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 253
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd65b21517e6fa400800000000000000
+      internalID: 337609930048231132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_55
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 253
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 684fb6053b7e1c340800000000000000
+      internalID: 4882438228380742790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 223
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c4704457f7eca0d0800000000000000
+      internalID: -3410095768369859391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_57
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 223
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187d86369d551a7f0800000000000000
+      internalID: -603106482926856319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_58
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 223
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c1a763225477750800000000000000
+      internalID: 6302582216773475471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 193
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b78336efaac9344a97a7db8f8118093
+      internalID: 1638425402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_60
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 192
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49057ad56e548f346a1f53210afa3ada
+      internalID: 1762075404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_61
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 192
+        width: 44
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7abbd2a245003647ab58bce1f854ce9
+      internalID: -1843700969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c384956676e394bb128c283c61702a
+      internalID: 2037445262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_63
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 160
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abaefaebd4e75d349b9176f5849c200c
+      internalID: 2005596874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_64
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 159
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9dcc8ac505833545ae4cc2013b79839
+      internalID: 1024492622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_65
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 157
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60359fc0395af484bb7a2ebf2fe45856
+      internalID: 410017256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_66
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 157
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf425ecf061adc3479b36328e67d9609
+      internalID: 1667619777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0550cc4804e76942ae5a5789ef95cdb
+      internalID: -552791075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ae14bafaee58d49b36c83fb704ca2a
+      internalID: 998765760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_69
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 94
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0024dc4556a82949ac019a3f75662c6
+      internalID: 2064656384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 66
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486a4bacb035d4048816e8b8eed6bf34
+      internalID: -1062969327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 26
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3903ae2c9509ff742a876026e26fa4c0
+      internalID: 2142026186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_74
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 192
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9170554926d11543beb7db2ab83f372
+      internalID: 1674946295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_75
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 192
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cff6d560bb48e94190b610abd0466f1
+      internalID: 19345420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skelegun_weapons_76
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 191
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875a41c89da1fe0469f855725ebf37d9
+      internalID: 760604026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 981e4aafb571de1429f669b4ff647543
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      skelegun_weapons_0: 1839532847384734474
+      skelegun_weapons_1: -1006475951588327324
+      skelegun_weapons_10: -8505187549452598195
+      skelegun_weapons_11: -2856796539157931626
+      skelegun_weapons_12: -3767640716702864476
+      skelegun_weapons_13: 6081037335946271374
+      skelegun_weapons_14: 3829276399796992904
+      skelegun_weapons_15: -1420250701948878945
+      skelegun_weapons_16: 3384496151100874697
+      skelegun_weapons_17: -6826385594399427557
+      skelegun_weapons_18: 71671719098132911
+      skelegun_weapons_19: 4440791597479410721
+      skelegun_weapons_2: -3028478991874385945
+      skelegun_weapons_20: -6264697028225642349
+      skelegun_weapons_21: -3388880008604074030
+      skelegun_weapons_22: 8110863233600569232
+      skelegun_weapons_23: 2899344906675110463
+      skelegun_weapons_24: -3723585090664597805
+      skelegun_weapons_25: -1623657681709987352
+      skelegun_weapons_26: 3429421686179464787
+      skelegun_weapons_27: 1775008612362407251
+      skelegun_weapons_28: -6499821463570038327
+      skelegun_weapons_29: -2197965089832423621
+      skelegun_weapons_3: -6307373883565300965
+      skelegun_weapons_30: 6341872109158953461
+      skelegun_weapons_31: -9034898763495901026
+      skelegun_weapons_32: -7148416008306604263
+      skelegun_weapons_33: 771759391667004062
+      skelegun_weapons_34: 3954285763428501383
+      skelegun_weapons_35: -7055775218069748925
+      skelegun_weapons_36: 684197749801826544
+      skelegun_weapons_37: -5664514094341943469
+      skelegun_weapons_38: -1889457214610306416
+      skelegun_weapons_39: -4850717699785517085
+      skelegun_weapons_4: 5692206782290674088
+      skelegun_weapons_40: 5669587100425199444
+      skelegun_weapons_41: 8210440771976148967
+      skelegun_weapons_42: 6971871658462732573
+      skelegun_weapons_43: 1055137276029075227
+      skelegun_weapons_44: 1074936017415463896
+      skelegun_weapons_45: -6065725547540559795
+      skelegun_weapons_46: 4263482230020847792
+      skelegun_weapons_47: -4655660083000677208
+      skelegun_weapons_48: -6554330590391149349
+      skelegun_weapons_49: 5602766790384824962
+      skelegun_weapons_5: -1420971539445788303
+      skelegun_weapons_50: -1613625071025594427
+      skelegun_weapons_51: 8350936223076148253
+      skelegun_weapons_52: 499488972233022475
+      skelegun_weapons_53: 4751831756442308722
+      skelegun_weapons_54: 337609930048231132
+      skelegun_weapons_55: 4882438228380742790
+      skelegun_weapons_56: -3410095768369859391
+      skelegun_weapons_57: -603106482926856319
+      skelegun_weapons_58: 6302582216773475471
+      skelegun_weapons_59: 1638425402
+      skelegun_weapons_6: -1297885137916112985
+      skelegun_weapons_60: 1762075404
+      skelegun_weapons_61: -1843700969
+      skelegun_weapons_62: 2037445262
+      skelegun_weapons_63: 2005596874
+      skelegun_weapons_64: 1024492622
+      skelegun_weapons_65: 410017256
+      skelegun_weapons_66: 1667619777
+      skelegun_weapons_67: -552791075
+      skelegun_weapons_68: 998765760
+      skelegun_weapons_69: 2064656384
+      skelegun_weapons_7: 7519177584634614806
+      skelegun_weapons_70: -1062969327
+      skelegun_weapons_71: 2142026186
+      skelegun_weapons_72: -1268973232
+      skelegun_weapons_73: -783866994
+      skelegun_weapons_74: 1674946295
+      skelegun_weapons_75: 19345420
+      skelegun_weapons_76: 760604026
+      skelegun_weapons_77: -200888108
+      skelegun_weapons_8: 6176201651147617921
+      skelegun_weapons_9: 5760575201205567149
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
