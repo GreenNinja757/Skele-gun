@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using System;
 
 public class EnemyStats : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class EnemyStats : MonoBehaviour
     public int doomStacks;
 
     public bool isStunned;
+
+    public event Action<EnemyStats> OnDeath;
 
     public void TakeDamage(string type, float damage, bool isCrit)
     {
@@ -35,6 +38,7 @@ public class EnemyStats : MonoBehaviour
             {
                 //player.itemInventory[i].OnEnemyKill(gameObject);
             }
+            OnDeath?.Invoke(this);
             Destroy(gameObject);
         }
 

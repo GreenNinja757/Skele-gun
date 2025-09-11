@@ -7,7 +7,7 @@ public class EnemyChecker : MonoBehaviour
     //Parent transform under which all room enemies are spawned
     public Transform enemyAOE;
     // live?enemy list
-    public List<EnemyHP> liveEnemies = new List<EnemyHP>();
+    public List<EnemyStats> liveEnemies = new List<EnemyStats>();
     // True as long as there are zero living enemies left.
     public bool allEnemiesCleared=> liveEnemies.Count == 0;
 
@@ -22,7 +22,7 @@ public class EnemyChecker : MonoBehaviour
         // Gather all EnemyHealth components under this room
         foreach (Transform child in enemyAOE)
         {
-            var eh = child.GetComponent<EnemyHP>();
+            var eh = child.GetComponent<EnemyStats>();
             if (eh != null)
             {
                 liveEnemies.Add(eh);
@@ -31,7 +31,7 @@ public class EnemyChecker : MonoBehaviour
         }
     }
 
-    private void HandleEnemyDeath(EnemyHP deadEnemy)
+    private void HandleEnemyDeath(EnemyStats deadEnemy)
     {
         // Unsubscribe and remove
         deadEnemy.OnDeath -= HandleEnemyDeath;

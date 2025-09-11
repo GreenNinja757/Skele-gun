@@ -71,7 +71,7 @@ public class PlayerHUD : MonoBehaviour
         } 
         else
         {
-            ammoValue.text = "\u221E/\u221E";
+            ammoValue.text = "\u0020"; //This is a blank character, so the ammo count won't show if they don't have a gun
         }
     }
 }
