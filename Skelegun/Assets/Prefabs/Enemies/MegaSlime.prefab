@@ -304,6 +304,7 @@ GameObject:
   - component: {fileID: 6973154705313399818}
   - component: {fileID: 7346579899084904335}
   - component: {fileID: 7851804217260715516}
+  - component: {fileID: -4743985185551917396}
   m_Layer: 0
   m_Name: MegaSlime
   m_TagString: Enemy
@@ -469,8 +470,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHud: {fileID: 7346579899084904335}
   damageNumberPrefab: {fileID: 5284790980021571533, guid: 943cba021b19c4f48bdbc18df4172d32, type: 3}
-  maxHealth: 25
-  currentHealth: 25
+  maxHealth: 50
+  currentHealth: 50
   fireStacks: 0
   iceStacks: 0
   lightningStacks: 0
@@ -516,6 +517,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-4743985185551917396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3112308875580206415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0335ce1b6958b14c8ec494a47202f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  moveSpeed: 3
+  chaseDistance: 15
+  pushbackForce: 0
+  animator: {fileID: 0}
 --- !u!1 &5208344330439343843
 GameObject:
   m_ObjectHideFlags: 0
