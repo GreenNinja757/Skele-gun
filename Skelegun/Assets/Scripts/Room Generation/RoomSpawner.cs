@@ -1,14 +1,14 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 public class RoomSpawner : MonoBehaviour
 {
     [Header("Room Settings")]
     public GameObject[] roomPrefabs; // Regular room prefabs
+    public GameObject spawnRoomPrefab;
     public GameObject finalRoomPrefab;
-    public int maxRooms = 5;
     public Transform roomsParent;
+    public int maxRooms = 5;
     public float roomSize = 10f; // Adjust based on your prefab dimensions
 
     [Header("Enemy Settings")]
@@ -44,9 +44,10 @@ public class RoomSpawner : MonoBehaviour
 
     void GenerateRooms()
     {
+        // First room is the spawn room
         Vector2 startPosition = RoundVector2(Vector2.zero);
         roomPositions.Add(startPosition);
-        GameObject firstRoom = SpawnRoom(startPosition);
+        GameObject firstRoom = Instantiate(spawnRoomPrefab, startPosition, Quaternion.identity, roomsParent);
         placedRooms.Add(startPosition, firstRoom);
         spawnedRooms.Add(firstRoom);
 
@@ -61,6 +62,12 @@ public class RoomSpawner : MonoBehaviour
                 spawnedRooms.Add(room);
             }
         }
+
+        //Generate treasure rooms
+
+        //Generate shrine rooms
+
+        //Generate secret rooms
 
         // Replace the last room with the final room
         if (spawnedRooms.Count > 0 && finalRoomPrefab != null)
@@ -122,7 +129,6 @@ public class RoomSpawner : MonoBehaviour
             }
         }
     }
-
 
     GameObject SpawnRoom(Vector2 position)
     {
@@ -268,8 +274,8 @@ public class RoomSpawner : MonoBehaviour
             }
         }
     }
-    void PlacePlayer()
 
+    void PlacePlayer()
     {
         foreach (Vector2 pos in placedRooms.Keys)
             Debug.Log("Room at: " + pos);
@@ -279,6 +285,7 @@ public class RoomSpawner : MonoBehaviour
             player.transform.position = spawnedRooms[0].transform.position;
         }
     }
+
     private Vector2 RoundVector2(Vector2 vec)
     {
         float precision = 10f; // Multiplier for one decimal place (adjust as needed)
@@ -287,6 +294,3 @@ public class RoomSpawner : MonoBehaviour
         return new Vector2(roundedX, roundedY);
     }
 }
-
-
-        

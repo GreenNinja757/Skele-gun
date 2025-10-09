@@ -696,11 +696,11 @@ MonoBehaviour:
   hud: {fileID: 3147505905410550988}
   rb: {fileID: 3051890576083394264}
   sr: {fileID: 7801165146814088903}
+  animator: {fileID: 32923412247146958}
   weaponRotationPoint: {fileID: 1032436891328996026}
   weaponSpawnPoint: {fileID: 6373941837940479472}
   bulletSpawnPoints:
   - {fileID: 4402919944148821933}
-  animator: {fileID: 32923412247146958}
   cam: {fileID: 6561793383919419460}
   isHeld: 0
   isAlive: 1
@@ -759,8 +759,10 @@ MonoBehaviour:
   player: {fileID: 8916591098388898298}
   stats: {fileID: 2630052253102126544}
   hud: {fileID: 3147505905410550988}
-  itemInventory: []
-  weaponInventory: []
+  itemInventory:
+  - {fileID: 0}
+  weaponInventory:
+  - {fileID: 0}
   equippedWeapon: {fileID: 0}
   equipSlot: 0
   pickupSFX: {fileID: 8300000, guid: 085d5d5b652251840a69013ccd6355ec, type: 3}
@@ -3286,11 +3288,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ComponentVersion: 1
-  m_AssetsPPU: 16
-  m_RefResolutionX: 320
-  m_RefResolutionY: 180
+  m_AssetsPPU: 64
+  m_RefResolutionX: 1024
+  m_RefResolutionY: 440
   m_CropFrame: 0
-  m_GridSnapping: 0
+  m_GridSnapping: 2
   m_FilterMode: 1
   m_UpscaleRT: 0
   m_PixelSnapping: 0
@@ -3332,7 +3334,7 @@ Camera:
   far clip plane: 1000
   field of view: 60.000004
   orthographic: 1
-  orthographic size: 8.03125
+  orthographic size: 3.984375
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
