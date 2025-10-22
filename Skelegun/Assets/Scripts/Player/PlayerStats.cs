@@ -62,34 +62,36 @@ public class PlayerStats : MonoBehaviour
     {
         if (!isInvincible && player.isAlive)
         {
+            if (DeathMode.DeathModeEnabled)
+            {
+                currentHealth = 0;
+                player.isAlive = false;
+                Die();
+                return;
+            }
+
             if (shield > 0)
             {
                 shield -= damage;
-
-                if (shield <= 0)
-                {
-                    shield = 0;
-                }
-            } 
+                if (shield <= 0) shield = 0;
+            }
             else
             {
                 currentHealth -= damage;
-
                 if (currentHealth <= 0)
                 {
                     currentHealth = 0;
                     player.isAlive = false;
-
                     Die();
                 }
             }
 
             Mathf.Round(currentHealth);
-
             StartCoroutine(nameof(InvincibilityTimer));
             hud.UpdateHUD();
         }
     }
+
 
     public void Die()
     {

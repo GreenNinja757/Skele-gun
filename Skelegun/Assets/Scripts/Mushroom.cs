@@ -1,62 +1,71 @@
+using System;
 using UnityEngine;
-
+using Random = UnityEngine.Random;
 public class Mushroom : Enemy
 {
-    public float orbitSpeed = 3f;        // How fast the Mushroom circles around the player
-    public float orbitRadius = 3f;       // Distance from the player while orbiting
-    public float orbitTime = 3f;         // Time to orbit before charging
-    public float chargeSpeed = 10f;      // Speed when charging
+    private EnemyStats stats;
 
-    private Transform player;
-    private float orbitTimer;
-    private bool isCharging = false;
-    private Vector3 chargeDirection;
+    [Header("Duplication Settings")]
+    [SerializeField] private float spawnInterval = 1f;   
+    [SerializeField] private float spawnDistance = 1f;   
+    [SerializeField] private int maxClones = 5;          
 
-    void Start()
+    private float timer;
+
+    // Track how many mushrooms exist at once
+    private static int currentCloneCount = 0;
+
+    void Awake()
     {
-        base.Start(); // Keep Enemy's setup
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        orbitTimer = orbitTime;
+        stats = GetComponent<EnemyStats>();
+        currentCloneCount++;
+    }
+
+    void OnDestroy()
+    {
+        // Make sure the counter decreases when this mushroom dies
+        currentCloneCount--;
     }
 
     void Update()
     {
-        base.Update();
+        if (stats == null || stats.currentHealth <= 0) return;
 
-        if (player == null) return;
-
-        if (!isCharging)
+        // Base enemy behavior
+        if (Vector2.Distance(transform.position, player.position) <= chaseDistance)
         {
-            // Orbiting logic
-            orbitTimer -= Time.deltaTime;
-            OrbitAroundPlayer();
-
-            if (orbitTimer <= 0f)
-            {
-                // Start charging
-                isCharging = true;
-                chargeDirection = (player.position - transform.position).normalized;
-            }
+            Move();
         }
-        else
+
+        Animate();
+        FlipSprite();
+
+        // Duplication timer
+        timer += Time.deltaTime;
+        if (timer >= spawnInterval)
         {
-            // Charge straight at the player
-            transform.position += chargeDirection * chargeSpeed * Time.deltaTime;
+            TryDuplicate();
+            timer = 0f;
         }
     }
 
-    void OrbitAroundPlayer()
+    private void TryDuplicate()
     {
-        // Find direction around player
-        Vector3 offset = transform.position - player.position;
-        offset = Quaternion.Euler(0, orbitSpeed * Time.deltaTime * 50f, 0) * offset;
-        offset = offset.normalized * orbitRadius;
+        // Stop if the clone cap is hit
+        if (currentCloneCount >= maxClones) return;
 
-        // Maintain orbit around player
-        transform.position = player.position + offset;
+        // Picks a random direction
+        Vector2 randomOffset = Random.insideUnitCircle.normalized * spawnDistance;
+        Vector2 spawnPosition = (Vector2)transform.position + randomOffset;
 
-        // Face the player
-        transform.LookAt(player.position);
+        // Ensure the mushroom isn't already destroyed
+        if (this == null || gameObject == null) return;
+
+        // Spawns a new mushroom
+        Instantiate(gameObject, spawnPosition, Quaternion.identity);
     }
 }
+
+
+
 
