@@ -450,9 +450,9 @@ MonoBehaviour:
   chaseDistance: 20
   moveSpeed: 2
   projectile: {fileID: 230527994632062389, guid: 2595b5aefab8cd24e9d60f33487cdb32, type: 3}
-  projectileSpeed: 0
-  fireRate: 2
-  attackRange: 100
+  projectileSpeed: 5
+  fireRate: 700
+  attackRange: 10
 --- !u!1 &5495852095043384623
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,9 +7,9 @@ public class Golem : Enemy
     public float moveSpeed = 2f;
 
     [Header("Attack")]
-    public GameObject projectile;
+    public GameObject projectile;      // Prefab that uses the Projectile script
     public float projectileSpeed = 10f;
-    public float fireRate = 1.5f;      // Seconds between shots
+    public float fireRate = 70f;      // Seconds between shots
     public float attackRange = 6f;     // Max distance to attack
 
     private float fireCooldown = 0f;
@@ -21,22 +21,17 @@ public class Golem : Enemy
     void Start()
     {
         player = FindAnyObjectByType<PlayerController>().transform;
-        rb = GetComponent<Rigidbody2D>(); // Enemy rigidbody
-        playerRb = player.GetComponent<Rigidbody2D>(); // Player rigidbody
+        rb = GetComponent<Rigidbody2D>();
+        playerRb = player.GetComponent<Rigidbody2D>();
     }
 
     void Moves()
     {
         Vector2 direction;
         if (Vector2.Distance(transform.position, player.position) <= chaseDistance)
-        {
-            // Moves towards the player
             direction = (player.position - transform.position).normalized;
-        }
         else
-        {
             direction = Vector2.zero;
-        }
 
         rb.linearVelocity = direction * moveSpeed;
     }
@@ -49,11 +44,10 @@ public class Golem : Enemy
             return;
         }
 
-        // Only shoot if within attack range
         float distToPlayer = Vector2.Distance(transform.position, player.position);
         if (distToPlayer > attackRange) return;
 
-        // Predicts player movement
+        // Predict player movement
         Vector2 playerPos = player.position;
         Vector2 playerVel = playerRb.linearVelocity;
         Vector2 golemPos = transform.position;
@@ -63,14 +57,18 @@ public class Golem : Enemy
         float timeToHit = distance / projectileSpeed;
 
         Vector2 predictedPos = playerPos + playerVel * timeToHit;
-
-        // Direction to shoot
         Vector2 shootDir = (predictedPos - golemPos).normalized;
 
-        // Spawns projectiles
+        // Spawn projectile
         GameObject proj = Instantiate(projectile, transform.position, Quaternion.identity);
-        Rigidbody2D projRb = proj.GetComponent<Rigidbody2D>();
-        projRb.linearVelocity = shootDir * projectileSpeed;
+
+        // Rotate it so its "transform.right" points toward the shootDir
+        float angle = Mathf.Atan2(shootDir.y, shootDir.x) * Mathf.Rad2Deg;
+        proj.transform.rotation = Quaternion.Euler(0, 0, angle);
+
+        // Set its stats (damage=0, speed, size=1)
+        Projectile projScript = proj.GetComponent<Projectile>();
+        projScript.SetStats(0, projectileSpeed, 1);
 
         fireCooldown = fireRate;
     }
@@ -81,5 +79,7 @@ public class Golem : Enemy
         Attack();
     }
 }
+
+
 
 

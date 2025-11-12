@@ -27910,7 +27910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8695917587848779088, guid: f0f2481c5832905428348bdf5faef32c, type: 3}
       propertyPath: m_Constraints
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28147,7 +28147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8695917587848779088, guid: 0b9433e7d658e0f4ca57153af29aac4f, type: 3}
       propertyPath: m_Constraints
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30628,7 +30628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5871181329192139203, guid: 1e20931429f878a409c05798d0722f07, type: 3}
       propertyPath: m_Constraints
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8220526811865486658, guid: 1e20931429f878a409c05798d0722f07, type: 3}
       propertyPath: m_Enabled
@@ -31452,13 +31452,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom
       objectReference: {fileID: 0}
+    - target: {fileID: 5604566325906204697, guid: eb2e902a9d0d223438afec09d166bc52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6262565970901588578, guid: eb2e902a9d0d223438afec09d166bc52, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 513423164}
     - target: {fileID: 6439471217537343563, guid: eb2e902a9d0d223438afec09d166bc52, type: 3}
       propertyPath: m_Constraints
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7318677238860772275, guid: eb2e902a9d0d223438afec09d166bc52, type: 3}
       propertyPath: m_AnchorMax.x
@@ -31466,6 +31470,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7318677238860772275, guid: eb2e902a9d0d223438afec09d166bc52, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7318677238860772275, guid: eb2e902a9d0d223438afec09d166bc52, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7318677238860772275, guid: eb2e902a9d0d223438afec09d166bc52, type: 3}
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -31881,6 +31893,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1388158483008190076, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
+      propertyPath: m_Colors.m_PressedColor.a
+      value: 0.3137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388158483008190076, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.a
+      value: 0.11764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388158483008190076, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -31939,6 +31959,18 @@ PrefabInstance:
     - target: {fileID: 1902712184319415073, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1902712184319415073, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664040669790268407, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
+      propertyPath: m_Colors.m_PressedColor.a
+      value: 0.3137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664040669790268407, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.a
+      value: 0.11764706
       objectReference: {fileID: 0}
     - target: {fileID: 3664040669790268407, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -32004,13 +32036,29 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6287645347855949108, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287645347855949108, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6561793383919419460, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: orthographic size
-      value: 7.203125
+      value: 7.09375
       objectReference: {fileID: 0}
     - target: {fileID: 6912301551264684034, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7207100680997472988, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
+      propertyPath: m_Colors.m_PressedColor.a
+      value: 0.3137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 7207100680997472988, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.a
+      value: 0.11764706
       objectReference: {fileID: 0}
     - target: {fileID: 7207100680997472988, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -32042,6 +32090,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7299616144866060574, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7299616144866060574, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7299616144866060574, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7803091289682849209, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
