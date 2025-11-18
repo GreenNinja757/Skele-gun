@@ -8,7 +8,7 @@ public class GolemProjectile2D : MonoBehaviour
     public float lifeTime = 5f;
     public float speed = 10f;
 
-    [Header("Visuals & Audio (optional)")]
+    [Header("Visuals & Audio")]
     public GameObject bulletImpactPrefab;
     public SpriteRenderer bulletSprite;
     public Sprite bulletImpactSprite;
@@ -46,7 +46,6 @@ public class GolemProjectile2D : MonoBehaviour
 
     private void Update()
     {
-        // Optional continuous motion, in case physics gets interrupted
         if (rb != null)
             rb.linearVelocity = moveDirection * speed;
     }
