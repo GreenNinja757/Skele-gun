@@ -19,6 +19,14 @@ public class PlayerController : MonoBehaviour
     public Transform weaponSpawnPoint;
     public List<Transform> bulletSpawnPoints;
 
+    [Header("Knockback")]
+
+    private bool isKnockedBack = false;
+    private float knockbackTimer = 0f;
+    private Vector2 knockbackVelocity;
+    public bool IsKnockedBack => isKnockedBack;
+
+
     public Animator animator;
 
     public Camera cam;
@@ -126,17 +134,44 @@ public class PlayerController : MonoBehaviour
     {
         if (isAlive)
         {
+            if (isKnockedBack)
+            {
+                knockbackTimer -= Time.deltaTime;
+                if (knockbackTimer <= 0f)
+                {
+                    isKnockedBack = false;
+                }
+                else
+                {
+                    rb.MovePosition(rb.position + knockbackVelocity * Time.deltaTime);
+                    return; // Skip normal input while knocked back
+                }
+            }
+
             Move();
             Aim();
             Shoot();
             SwitchWeapon();
             FlipSprite();
             Animate();
-        } 
-
-        if (input.actions["Reset"].WasPressedThisFrame())
-        {
-            //SceneManager.LoadScene(nameof(SceneManager.GetActiveScene));
         }
     }
+
+    public void ApplyKnockback(Vector2 sourcePosition, float strength, float duration)
+    {
+        if (isKnockedBack) return; // Ignore if already knocked back
+
+        isKnockedBack = true;
+        knockbackTimer = duration;
+
+        Vector2 direction = (transform.position - (Vector3)sourcePosition).normalized;
+        knockbackVelocity = direction * strength;
+    }
+
+
+
+
+
+
+
 }

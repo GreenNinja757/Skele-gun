@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3352640259090069403}
   - component: {fileID: 1388499108078338024}
   - component: {fileID: 1310385360873460026}
-  - component: {fileID: 3839470142676106110}
   m_Layer: 0
   m_Name: OrangeCrush
   m_TagString: Enemy
@@ -199,22 +198,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09151cf184922df4c98f3c0a393bb1e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyHud: {fileID: 0}
+  damageNumberPrefab: {fileID: 0}
   maxHealth: 5
---- !u!114 &3839470142676106110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5328861631183045750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8ee03724e6ec35449b7f2796744024c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 6
-  moveSpeed: 8
-  knockbackStrength: 7
-  chaseDistance: 7
-  knockbackDuration: 0.5
-  playerTran: {fileID: 0}
+  currentHealth: 0
+  fireStacks: 0
+  iceStacks: 0
+  lightningStacks: 0
+  doomStacks: 0
+  isStunned: 0

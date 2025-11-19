@@ -58,7 +58,7 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(float damage, Vector2 sourcePos, float knockbackStrength, float knockbackDuration)
     {
         if (!isInvincible && player.isAlive)
         {
@@ -86,7 +86,13 @@ public class PlayerStats : MonoBehaviour
 
             Mathf.Round(currentHealth);
 
-            StartCoroutine(nameof(InvincibilityTimer));
+            StartCoroutine(InvincibilityTimer());
+            if (sourcePos != Vector2.zero && knockbackStrength > 0f)
+            {
+                player.ApplyKnockback(sourcePos, knockbackStrength, knockbackDuration);
+            }
+
+
             hud.UpdateHUD();
         }
     }
@@ -105,7 +111,7 @@ public class PlayerStats : MonoBehaviour
         player.rb.constraints = RigidbodyConstraints2D.FreezePosition;
     }
 
-    public IEnumerable InvincibilityTimer()
+    public IEnumerator InvincibilityTimer()
     {
         //play hurt animation
         isInvincible = true;

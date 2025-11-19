@@ -27,7 +27,7 @@ public class Slime : Enemy
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void ChildUpdate()
     {
         Moves();
         //Attack();

@@ -128,6 +128,8 @@ GameObject:
   m_Component:
   - component: {fileID: 322579798}
   - component: {fileID: 322579797}
+  - component: {fileID: 322579800}
+  - component: {fileID: 322579799}
   m_Layer: 0
   m_Name: Room Manager
   m_TagString: Untagged
@@ -148,11 +150,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entryRoomPrefab: {fileID: 1399938781785284468, guid: 4a866fccabf6bbc45b5e1e66cec54a0e, type: 3}
-  combatRoomPrefab: {fileID: 1399938781785284468, guid: 261be66dd4b222a4eb88ff2f8762b7da, type: 3}
-  shopRoomPrefab: {fileID: 1399938781785284468, guid: 3d4ab20839f9dc849a9897dfd7940c0e, type: 3}
+  combatRoomPrefab: {fileID: 7395803156107526828, guid: a826ceb265798714da618cbfdb599388, type: 3}
+  shopRoomPrefab: {fileID: 512109773582919904, guid: 5a1a26ef4968b204ca1c2fa095648a53, type: 3}
   rewardRoomPrefab: {fileID: 1399938781785284468, guid: 6414955bdb4ef534cad9c44c322746a8, type: 3}
   bossRoomPrefab: {fileID: 4096024832790789952, guid: 4ba1a92bed5f79e458703bf9fb9f9c10, type: 3}
   combatRoomCount: 1
+  surface: {fileID: 322579800}
 --- !u!4 &322579798
 Transform:
   m_ObjectHideFlags: 0
@@ -161,13 +164,60 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322579796}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &322579799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322579796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70bd44a44cd62c64fbfc1eea95b24880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideByGrid: 0
+  m_UseMeshPrefab: {fileID: 0}
+  m_CompressBounds: 0
+  m_OverrideVector: {x: 1, y: 1, z: 1}
+--- !u!114 &322579800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322579796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e04976799df50f54ba128eff723155a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.033333335
+  m_BuildHeightMesh: 0
+  m_MinRegionArea: 0
+  m_HideEditorLogs: 0
+  m_NavMeshData: {fileID: 0}
 --- !u!1 &331018752
 GameObject:
   m_ObjectHideFlags: 0
