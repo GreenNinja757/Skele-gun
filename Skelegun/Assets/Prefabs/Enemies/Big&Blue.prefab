@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4736528071953199458}
   - component: {fileID: 8271414873358234156}
   - component: {fileID: 8753048725368953244}
-  - component: {fileID: 1475418492480604924}
   - component: {fileID: 8217437044226921744}
   - component: {fileID: 7530675680670252263}
+  - component: {fileID: 1583660491294975380}
   m_Layer: 0
   m_Name: Big&Blue
   m_TagString: Enemy
@@ -165,24 +165,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1475418492480604924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2475092649557354108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8ee03724e6ec35449b7f2796744024c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 2
-  moveSpeed: 1
-  knockbackStrength: 20
-  chaseDistance: 20
-  knockbackDuration: 1.5
-  playerTran: {fileID: 0}
 --- !u!114 &8217437044226921744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +177,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09151cf184922df4c98f3c0a393bb1e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyHud: {fileID: 1583660491294975380}
+  damageNumberPrefab: {fileID: 5284790980021571533, guid: 943cba021b19c4f48bdbc18df4172d32, type: 3}
   maxHealth: 10
+  currentHealth: 0
+  fireStacks: 0
+  iceStacks: 0
+  lightningStacks: 0
+  doomStacks: 0
+  isBurning: 0
+  isFreezing: 0
+  isShocking: 0
+  isStunned: 0
 --- !u!95 &7530675680670252263
 Animator:
   serializedVersion: 7
@@ -218,3 +211,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1583660491294975380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2475092649557354108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f534623887d43354c845aa4c2200bb17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 8217437044226921744}
+  healthBar: {fileID: 0}
+  burnSprite: {fileID: 0}
+  freezeSprite: {fileID: 0}
+  shockSprite: {fileID: 0}
+  doomSprite: {fileID: 0}
