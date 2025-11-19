@@ -6,10 +6,11 @@ public class OldRoomGen : MonoBehaviour
 {
     [Header("Room Settings")]
     public GameObject[] roomPrefabs; // Regular room prefabs
+    public GameObject spawnRoomPrefab;
     public GameObject finalRoomPrefab;
-    public int maxRooms = 5;
     public Transform roomsParent;
-    public float roomSize = 10f; // Adjust based on your prefab dimensions
+    public int maxRooms;
+    public float roomSize;
 
     [Header("Enemy Settings")]
     public GameObject[] normalEnemyPrefabs; // Enemies for regular rooms
