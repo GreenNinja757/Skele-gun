@@ -747,9 +747,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ecce3568e4fb4546bbf6b365cb6eca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gridPosition: {x: 0, y: 0}
+  discovered: 0
+  prefab: {fileID: 0}
+  exitNorth: {fileID: 0}
+  exitSouth: {fileID: 0}
+  exitEast: {fileID: 0}
+  exitWest: {fileID: 0}
+  gridSize: {x: 0, y: 0}
+  minDistanceFromSpawn: 0
   roomType: 0
-  doorEntry: {fileID: 0}
-  doorExit: {fileID: 0}
+  preferredMinDistanceFromSpawn: 0
+  weight: 1
+  maxSpawnAttempts: 8
+  forceExitCount: 0
+  forcedExitCount: 2
 --- !u!1 &1309955586690829281
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,8 +805,8 @@ GameObject:
   - component: {fileID: 9212077183579967125}
   - component: {fileID: 7058862026453869544}
   m_Layer: 3
-  m_Name: Level 1 Spawn
-  m_TagString: Untagged
+  m_Name: LVL1OGSpawn
+  m_TagString: Undefined
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -843,9 +855,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ecce3568e4fb4546bbf6b365cb6eca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gridPosition: {x: 0, y: 0}
+  discovered: 0
+  prefab: {fileID: 0}
+  exitNorth: {fileID: 0}
+  exitSouth: {fileID: 0}
+  exitEast: {fileID: 0}
+  exitWest: {fileID: 0}
+  gridSize: {x: 0, y: 0}
+  minDistanceFromSpawn: 0
   roomType: 0
-  doorEntry: {fileID: 0}
-  doorExit: {fileID: 7840256034549646055}
+  preferredMinDistanceFromSpawn: 0
+  weight: 1
+  maxSpawnAttempts: 8
+  forceExitCount: 0
+  forcedExitCount: 2
 --- !u!1 &4023717216258555120
 GameObject:
   m_ObjectHideFlags: 0
