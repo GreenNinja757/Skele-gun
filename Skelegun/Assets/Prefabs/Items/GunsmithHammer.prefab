@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3077780617628635807}
   - component: {fileID: 8380299660005786062}
   - component: {fileID: 4620285242099690692}
+  - component: {fileID: 544765006503446499}
   m_Layer: 0
   m_Name: GunsmithHammer
   m_TagString: Item
@@ -134,3 +135,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &544765006503446499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2768877289358424188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a425f694ab40f6941bdaa0722c4e1c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemSprite: {fileID: 8380299660005786062}
+  nameText: Gunsmith Hammer
+  flavorText: Forges your weapons into masterworks.

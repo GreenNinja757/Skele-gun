@@ -15,6 +15,10 @@ public class EnemyStats : MonoBehaviour
     public int lightningStacks;
     public int doomStacks;
 
+    public bool isBurning;
+    public bool isFreezing;
+    public bool isShocking;
+
     public bool isStunned;
 
     public void TakeDamage(string type, float damage, bool isCrit)
@@ -52,15 +56,26 @@ public class EnemyStats : MonoBehaviour
         {
             case "fire":
                 fireStacks++;
-                StartCoroutine(nameof(BurnTimer));
+                if (!isBurning)
+                {
+                    StartCoroutine(nameof(BurnTimer));
+                }
                 break;
 
             case "ice":
                 iceStacks++;
-                StartCoroutine(nameof(FreezeTimer));
+                if (!isFreezing)
+                {
+                    StartCoroutine(nameof(FreezeTimer));
+                }
                 break;
 
             case "lightning":
+                lightningStacks++;
+                if (!isShocking)
+                {
+                    StartCoroutine(nameof(ShockTimer));
+                }
                 break;
 
             case "doom":
@@ -78,16 +93,38 @@ public class EnemyStats : MonoBehaviour
 
     public IEnumerator BurnTimer()
     {
+        isBurning = true;
         yield return new WaitForSeconds(1);
+        TakeDamage("fire", 1, false);
         fireStacks--;
-        TakeDamage("fire", 3, false);
+        if (fireStacks > 0)
+        {
+            StartCoroutine(nameof(BurnTimer));
+        }
     }
 
     public IEnumerator FreezeTimer()
     {
+        isFreezing = true;
         yield return new WaitForSeconds(1);
+        TakeDamage("ice", 1, false);
         iceStacks--;
-        TakeDamage("ice", 3, false);
+        if (iceStacks > 0)
+        {
+            StartCoroutine(nameof(FreezeTimer));
+        }
+    }
+
+    public IEnumerator ShockTimer()
+    {
+        isShocking = true;
+        yield return new WaitForSeconds(1);
+        TakeDamage("lightning", 1, false);
+        lightningStacks--;
+        if (lightningStacks > 0)
+        {
+            StartCoroutine(nameof(ShockTimer));
+        }
     }
 
     public void Start()

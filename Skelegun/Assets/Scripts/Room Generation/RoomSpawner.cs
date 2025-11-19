@@ -8,8 +8,8 @@ public class RoomSpawner : MonoBehaviour
     public GameObject spawnRoomPrefab;
     public GameObject finalRoomPrefab;
     public Transform roomsParent;
-    public int maxRooms = 5;
-    public float roomSize = 10f; // Adjust based on your prefab dimensions
+    public int maxRooms;
+    public float roomSize;
 
     [Header("Enemy Settings")]
     public GameObject[] normalEnemyPrefabs; // Enemies for regular rooms
@@ -51,6 +51,7 @@ public class RoomSpawner : MonoBehaviour
         placedRooms.Add(startPosition, firstRoom);
         spawnedRooms.Add(firstRoom);
 
+        //generate random rooms
         for (int i = 1; i < maxRooms; i++)
         {
             Vector2 newPos = RoundVector2(GetNewRoomPosition());

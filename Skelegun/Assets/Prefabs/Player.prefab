@@ -732,6 +732,7 @@ MonoBehaviour:
   bonusMoney: 0
   bonusMoveSpeed: 0
   bonusSize: 1
+  bonusCritChance: 0
   bonusBulletDamage: 1
   bonusFireRate: 1
   bonusBulletSpeed: 1
@@ -759,10 +760,8 @@ MonoBehaviour:
   player: {fileID: 8916591098388898298}
   stats: {fileID: 2630052253102126544}
   hud: {fileID: 3147505905410550988}
-  itemInventory:
-  - {fileID: 0}
-  weaponInventory:
-  - {fileID: 0}
+  itemInventory: []
+  weaponInventory: []
   equippedWeapon: {fileID: 0}
   equipSlot: 0
   pickupSFX: {fileID: 8300000, guid: 085d5d5b652251840a69013ccd6355ec, type: 3}
@@ -3288,9 +3287,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ComponentVersion: 1
-  m_AssetsPPU: 64
-  m_RefResolutionX: 1024
-  m_RefResolutionY: 440
+  m_AssetsPPU: 32
+  m_RefResolutionX: 640
+  m_RefResolutionY: 1
   m_CropFrame: 0
   m_GridSnapping: 2
   m_FilterMode: 1
@@ -3334,7 +3333,7 @@ Camera:
   far clip plane: 1000
   field of view: 60.000004
   orthographic: 1
-  orthographic size: 3.984375
+  orthographic size: 5.625
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2

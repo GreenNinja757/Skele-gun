@@ -181,7 +181,7 @@ MonoBehaviour:
   bulletImpactPrefab: {fileID: 5619809507103134141, guid: 255d04f273f999e4cb303e7b79c62fb9, type: 3}
   light2D: {fileID: 8803392870045724882}
   bulletSprite: {fileID: -3323950811397226470}
-  bulletImpactSprite: {fileID: -8930370388767521063, guid: c3d911f56d7d32f46870beb6a5938146, type: 3}
+  bulletImpactSprite: {fileID: -5169918065398990210, guid: c3d911f56d7d32f46870beb6a5938146, type: 3}
   impactSFX: {fileID: 8300000, guid: 8ab725bdc1128ef4bb88ed56a7dd0b6c, type: 3}
 --- !u!114 &8803392870045724882
 MonoBehaviour:

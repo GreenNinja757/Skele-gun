@@ -194,7 +194,7 @@ MonoBehaviour:
   newBulletSpeed: 0
   newBulletSize: 0
   newAccuracy: 0
-  bulletPrefab: {fileID: 230527994632062389, guid: 95e2dcf2f76e7dd44ae3ca2e003ba166, type: 3}
+  bulletPrefab: {fileID: 230527994632062389, guid: ed0ad8058d9f23c48987d6f1fd2275c0, type: 3}
   muzzleFlashPrefab: {fileID: 5619809507103134141, guid: 8028ca5a6a0f6d34b8d614d84d96d7fd, type: 3}
   muzzleFlashSprite: {fileID: -2044602620, guid: 3549de95bc502a74fa33e367ba678363, type: 3}
   weaponSprite: {fileID: 3847690686107824987}

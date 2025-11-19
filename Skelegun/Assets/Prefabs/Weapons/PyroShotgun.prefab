@@ -194,11 +194,11 @@ MonoBehaviour:
   newBulletSpeed: 0
   newBulletSize: 0
   newAccuracy: 0
-  bulletPrefab: {fileID: 230527994632062389, guid: e51ca0e4377b75940b1fe704a2047f21, type: 3}
+  bulletPrefab: {fileID: 230527994632062389, guid: 9ee44d5e4396bb54f921422b51ec8f1b, type: 3}
   muzzleFlashPrefab: {fileID: 5619809507103134141, guid: 8028ca5a6a0f6d34b8d614d84d96d7fd, type: 3}
   muzzleFlashSprite: {fileID: 3727465243507873743, guid: 3549de95bc502a74fa33e367ba678363, type: 3}
   weaponSprite: {fileID: 3847690686107824987}
-  nameText: Shotgun
+  nameText: Pyro Shotgun
   flavorText: 
   shootSFX: {fileID: 8300000, guid: 70da028ae319d3a49b9c3536ab072dbe, type: 3}
   emptyMagSFX: {fileID: 8300000, guid: 8ab725bdc1128ef4bb88ed56a7dd0b6c, type: 3}

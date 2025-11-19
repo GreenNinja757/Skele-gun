@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CryoRounds : Item, IEnemyHitEffect
+public class PyroRounds : Item, IEnemyHitEffect
 {
     public void ApplyEnemyHitEffect(GameObject Enemy)
     {

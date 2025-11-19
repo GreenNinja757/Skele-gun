@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2665320482990323874}
   - component: {fileID: 8803392870045724882}
   m_Layer: 6
-  m_Name: Blue Projectile 1
+  m_Name: Projectile 23
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 4695829774511013448, guid: dd2f573ae786cb241b8880a4b9194353, type: 3}
+  m_Sprite: {fileID: -2354347564001617075, guid: dd2f573ae786cb241b8880a4b9194353, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -130,7 +130,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.3}
+    oldSize: {x: 0.7, y: 0.4}
     newSize: {x: 0.4, y: 0.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
   bulletImpactPrefab: {fileID: 5619809507103134141, guid: 255d04f273f999e4cb303e7b79c62fb9, type: 3}
   light2D: {fileID: 8803392870045724882}
   bulletSprite: {fileID: -3323950811397226470}
-  bulletImpactSprite: {fileID: -8930370388767521063, guid: c3d911f56d7d32f46870beb6a5938146, type: 3}
+  bulletImpactSprite: {fileID: 34076323, guid: c3d911f56d7d32f46870beb6a5938146, type: 3}
   impactSFX: {fileID: 8300000, guid: 8ab725bdc1128ef4bb88ed56a7dd0b6c, type: 3}
 --- !u!114 &8803392870045724882
 MonoBehaviour:
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 1
   m_FalloffIntensity: 0.75
-  m_Color: {r: 0, g: 0.49019608, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0, a: 1}
   m_Intensity: 0.5
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 0.65
+  m_PointLightOuterRadius: 0.8
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
