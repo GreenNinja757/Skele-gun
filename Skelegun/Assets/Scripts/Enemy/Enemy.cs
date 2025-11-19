@@ -6,6 +6,7 @@ public abstract class Enemy : MonoBehaviour
     public float moveSpeed;
     public float chaseDistance;
     public float pushbackForce;
+    public float pushbackStunTime;
     public Animator animator;
 
     protected Transform player;
@@ -35,12 +36,6 @@ public abstract class Enemy : MonoBehaviour
         }
     }
 
-    public void Move()
-    {
-        // Move towards the player
-        Vector2 direction = (player.position - transform.position).normalized;
-        rb.linearVelocity = direction * moveSpeed; // Apply velocity to move
-    }
 
     public void Animate()
     {
@@ -59,12 +54,22 @@ public abstract class Enemy : MonoBehaviour
     {
         Animate();
         FlipSprite();
+        ChildUpdate();
     }
+
+    protected virtual void ChildUpdate() { }
+
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+
+            player.GetComponent<PlayerStats>().TakeDamage(damage, transform.position, pushbackForce, pushbackStunTime);
+            player.GetComponent<PlayerHUD>().UpdateHUD();
+
+            /*
             //Apply a pushback force to the player
             Vector2 pushDirection = collision.transform.position - transform.position;
             playerRb.AddForce(pushDirection.normalized * pushbackForce, ForceMode2D.Impulse);
@@ -72,6 +77,7 @@ public abstract class Enemy : MonoBehaviour
             //Deal damage to the player
             player.GetComponent<PlayerStats>().TakeDamage(damage);
             player.GetComponent<PlayerHUD>().UpdateHUD();
+            */
         }
     }
 
@@ -79,13 +85,20 @@ public abstract class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+
+            player.GetComponent<PlayerStats>().TakeDamage(damage, transform.position, pushbackForce, pushbackStunTime);
+            player.GetComponent<PlayerHUD>().UpdateHUD();
+
+            /*
             //Apply a pushback force to the player
             Vector2 pushDirection = collision.transform.position - transform.position;
             playerRb.AddForce(pushDirection.normalized * pushbackForce, ForceMode2D.Impulse);
-
             //Deal damage to the player
             player.GetComponent<PlayerStats>().TakeDamage(damage);
             player.GetComponent<PlayerHUD>().UpdateHUD();
+            */
+
         }
+
     }
 }

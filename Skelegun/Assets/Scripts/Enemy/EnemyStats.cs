@@ -25,6 +25,8 @@ public class EnemyStats : MonoBehaviour
 
     public bool isStunned;
 
+    public event Action<EnemyStats> OnDeath;
+
     public void TakeDamage(string type, float damage, bool isCrit)
     {
         if (isCrit)
@@ -43,7 +45,11 @@ public class EnemyStats : MonoBehaviour
             {
                 //player.itemInventory[i].OnEnemyKill(gameObject);
             }
+
             Die();
+            OnDeath?.Invoke(this);
+            Destroy(gameObject);
+
         }
 
         var damageNumber = Instantiate(damageNumberPrefab, transform.position, Quaternion.identity);
