@@ -24,6 +24,7 @@ public class PlayerStats : MonoBehaviour
     public int bonusMoney;
     public int bonusMoveSpeed;
     public int bonusSize;
+    public int bonusCritChance;
 
     [Header("Bonus Weapon Stats")]
     public float bonusBulletDamage;
@@ -114,5 +115,5 @@ public class PlayerStats : MonoBehaviour
         yield return new WaitForSeconds(1f);
         isInvincible = false;
     }
-
 }
+

@@ -29,6 +29,7 @@ public class PlayerInventory : MonoBehaviour
             itemInventory.Add(item);
             item.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             item.GetComponent<SpriteRenderer>().enabled = false;
+
             StopAllCoroutines();
             StartCoroutine(hud.DisplayPickupMessage(item.itemSprite.sprite, item.nameText, item.flavorText));
         } 

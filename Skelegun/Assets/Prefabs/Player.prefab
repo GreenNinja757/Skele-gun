@@ -697,11 +697,11 @@ MonoBehaviour:
   hud: {fileID: 3147505905410550988}
   rb: {fileID: 3051890576083394264}
   sr: {fileID: 7801165146814088903}
+  animator: {fileID: 32923412247146958}
   weaponRotationPoint: {fileID: 1032436891328996026}
   weaponSpawnPoint: {fileID: 6373941837940479472}
   bulletSpawnPoints:
   - {fileID: 4402919944148821933}
-  animator: {fileID: 32923412247146958}
   cam: {fileID: 6561793383919419460}
   isHeld: 0
   isAlive: 1
@@ -733,6 +733,7 @@ MonoBehaviour:
   bonusMoney: 0
   bonusMoveSpeed: 0
   bonusSize: 1
+  bonusCritChance: 0
   bonusBulletDamage: 1
   bonusFireRate: 1
   bonusBulletSpeed: 1
@@ -4067,11 +4068,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ComponentVersion: 1
-  m_AssetsPPU: 16
-  m_RefResolutionX: 320
-  m_RefResolutionY: 180
+  m_AssetsPPU: 32
+  m_RefResolutionX: 640
+  m_RefResolutionY: 1
   m_CropFrame: 0
-  m_GridSnapping: 0
+  m_GridSnapping: 2
   m_FilterMode: 1
   m_UpscaleRT: 0
   m_PixelSnapping: 0

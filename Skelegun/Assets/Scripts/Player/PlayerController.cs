@@ -11,25 +11,26 @@ public class PlayerController : MonoBehaviour
     public PlayerStats stats;
     public PlayerInventory inventory;
     public PlayerHUD hud;
-
     public Rigidbody2D rb;
     public SpriteRenderer sr;
+    public Animator animator;
 
     public Transform weaponRotationPoint;
     public Transform weaponSpawnPoint;
     public List<Transform> bulletSpawnPoints;
-
-    public Animator animator;
-
     public Camera cam;
 
     public bool isHeld;
-
     public bool isAlive;
 
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
+    }
+
+    void Start()
+    {
+        
     }
 
     //This moves the player
