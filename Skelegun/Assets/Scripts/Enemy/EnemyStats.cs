@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using System;
 
 public class EnemyStats : MonoBehaviour
 {
@@ -14,6 +15,10 @@ public class EnemyStats : MonoBehaviour
     public int iceStacks;
     public int lightningStacks;
     public int doomStacks;
+
+    public event Action<EnemyStats> OnDeath;
+
+
 
     public bool isStunned;
 
@@ -35,7 +40,7 @@ public class EnemyStats : MonoBehaviour
             {
                 //player.itemInventory[i].OnEnemyKill(gameObject);
             }
-            Destroy(gameObject);
+            Die();
         }
 
         var damageNumber = Instantiate(damageNumberPrefab, transform.position, Quaternion.identity);
@@ -89,6 +94,16 @@ public class EnemyStats : MonoBehaviour
         iceStacks--;
         TakeDamage("ice", 3, false);
     }
+
+
+    public void Die()
+    {
+        Debug.Log("Enemy defeated!");
+        OnDeath?.Invoke(this);
+        Destroy(gameObject);
+    }
+
+
 
     public void Start()
     {
