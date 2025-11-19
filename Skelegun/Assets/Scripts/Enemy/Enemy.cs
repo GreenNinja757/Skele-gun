@@ -21,6 +21,15 @@ public abstract class Enemy : MonoBehaviour
         playerRb = player.GetComponent<Rigidbody2D>(); // Get the player's Rigidbody2D
     }
 
+
+    public void Move()
+    {
+        // Move towards the player
+        Vector2 direction = (player.position - transform.position).normalized;
+        rb.linearVelocity = direction * moveSpeed; // Apply velocity to move
+    }
+
+
     public void FlipSprite()
     {
         Camera cam = FindAnyObjectByType<Camera>();

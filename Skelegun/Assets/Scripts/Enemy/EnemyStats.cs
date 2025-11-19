@@ -21,11 +21,9 @@ public class EnemyStats : MonoBehaviour
     public bool isBurning;
     public bool isFreezing;
     public bool isShocking;
-
-
     public bool isStunned;
 
-    public event Action<EnemyStats> OnDeath;
+
 
     public void TakeDamage(string type, float damage, bool isCrit)
     {

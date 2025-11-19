@@ -27,8 +27,6 @@ public class PlayerController : MonoBehaviour
     private Vector2 knockbackVelocity;
     public bool IsKnockedBack => isKnockedBack;
 
-    public Animator animator;
-
     public Camera cam;
 
     public bool isHeld;

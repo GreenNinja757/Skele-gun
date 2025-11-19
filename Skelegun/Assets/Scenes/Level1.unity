@@ -149,25 +149,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28218362222639345b68a78476950aac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomPrefabs:
-  - {fileID: 1399938781785284468, guid: df14cbbda170c6e46bd1ae45197e2950, type: 3}
-  - {fileID: 1399938781785284468, guid: b811008b55d110f4ba2121f0a3fd5aa1, type: 3}
-  - {fileID: 1399938781785284468, guid: 2325fb1c9414f3f4e9bdd85105a68459, type: 3}
-  spawnRoomPrefab: {fileID: 1399938781785284468, guid: 6485e1ad525a2f0459686e77f79e39ac, type: 3}
-  finalRoomPrefab: {fileID: 1399938781785284468, guid: 2ab1e4e23bb06c048a2b8ea6add70383, type: 3}
-  roomsParent: {fileID: 322579798}
-  maxRooms: 5
-  roomSize: 50
-  normalEnemyPrefabs:
-  - {fileID: 3112308875580206415, guid: 0b9433e7d658e0f4ca57153af29aac4f, type: 3}
-  - {fileID: 3112308875580206415, guid: 0b9433e7d658e0f4ca57153af29aac4f, type: 3}
-  - {fileID: 3112308875580206415, guid: 0b9433e7d658e0f4ca57153af29aac4f, type: 3}
-  - {fileID: 3112308875580206415, guid: 0b9433e7d658e0f4ca57153af29aac4f, type: 3}
-  - {fileID: 3112308875580206415, guid: 0b9433e7d658e0f4ca57153af29aac4f, type: 3}
-  finalRoomEnemyPrefabs:
-  - {fileID: 3112308875580206415, guid: 0b9433e7d658e0f4ca57153af29aac4f, type: 3}
-  nextLevelSceneName: Level2
-  finalRoomTeleporterName: FinalTeleporter
+  pool: {fileID: 0}
+  targetRooms: 10
+  seeded: 1
+  seedOverride: 12345
+  showGizmos: 1
+  surface: {fileID: 0}
 --- !u!4 &322579798
 Transform:
   m_ObjectHideFlags: 0
@@ -357,41 +344,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1902712184319415073, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4402919944148821933, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4402919944148821933, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4402919944148821933, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 4402919944148821933, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 4402919944148821933, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4402919944148821933, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 6287645347855949108, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6287645347855949108, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7299616144866060574, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7803091289682849209, guid: 48ca65dad99dd7140bf15aaf1c844684, type: 3}
       propertyPath: m_LocalPosition.x
@@ -503,3 +494,4 @@ SceneRoots:
   - {fileID: 322579798}
   - {fileID: 1824012536}
   - {fileID: 1619781282}
+  - {fileID: 331018753}
