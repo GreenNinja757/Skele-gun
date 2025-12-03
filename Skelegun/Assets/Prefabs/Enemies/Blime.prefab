@@ -115,6 +115,9 @@ MonoBehaviour:
   iceStacks: 0
   lightningStacks: 0
   doomStacks: 0
+  isBurning: 0
+  isFreezing: 0
+  isShocking: 0
   isStunned: 0
 --- !u!50 &8011372615334666859
 Rigidbody2D:
