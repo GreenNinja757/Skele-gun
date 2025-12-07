@@ -494,9 +494,6 @@ MonoBehaviour:
   iceStacks: 0
   lightningStacks: 0
   doomStacks: 0
-  isBurning: 0
-  isFreezing: 0
-  isShocking: 0
   isStunned: 0
 --- !u!114 &7346579899084904335
 MonoBehaviour:
