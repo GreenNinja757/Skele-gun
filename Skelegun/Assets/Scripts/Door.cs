@@ -28,21 +28,21 @@ public class Door : MonoBehaviour
     {
         // Draw direction indicator
         Gizmos.color = Color.yellow;
-        Vector3 center = transform.position;
-        Vector3 directionVector = GetDirectionVector() * 0.5f;
+        Vector2 center = transform.position;
+        Vector2 directionVector = GetDirectionVector() * 0.5f;
         Gizmos.DrawLine(center, center + directionVector);
         Gizmos.DrawSphere(center + directionVector, 0.1f);
     }
 
-    Vector3 GetDirectionVector()
+    Vector2 GetDirectionVector()
     {
         switch (direction)
         {
-            case DoorDirection.North: return Vector3.up;
-            case DoorDirection.South: return Vector3.down;
-            case DoorDirection.East: return Vector3.right;
-            case DoorDirection.West: return Vector3.left;
-            default: return Vector3.zero;
+            case DoorDirection.North: return Vector2.up;
+            case DoorDirection.South: return Vector2.down;
+            case DoorDirection.East: return Vector2.right;
+            case DoorDirection.West: return Vector2.left;
+            default: return Vector2.zero;
         }
     }
 

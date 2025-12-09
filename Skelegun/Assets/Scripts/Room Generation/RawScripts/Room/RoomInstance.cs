@@ -2,53 +2,117 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.Tilemaps;
-using System;
+
 
 public class RoomInstance
 {
-    // References
+
     public RoomData data { get; private set; }
     public GameObject instanceObject { get; private set; }
 
-    // Spatial data
     public Vector2 editorPosition { get; private set; }
     public RectInt bounds { get; private set; }
 
-    // Door data
+
     public List<DoorLocation> doors { get; private set; }
     public Dictionary<DoorLocation, RoomInstance> connections { get; private set; }
+
+    public List<Transform> spawnPoints { get; private set; }
+
+    // which doors are active
+    public List<DoorDirection> activeDoorDirections { get; set; } = new List<DoorDirection>();
+
 
     public RoomInstance(RoomData sourceData)
     {
         data = sourceData;
         doors = new List<DoorLocation>();
         connections = new Dictionary<DoorLocation, RoomInstance>();
+        activeDoorDirections = new List<DoorDirection>();
+        spawnPoints = new List<Transform>();
     }
+
 
     public void Initialize(GameObject instance, Vector3 worldOffset, Vector2 editorPos)
     {
         instanceObject = instance;
         editorPosition = editorPos;
 
+        data.ApplyTilemapOriginOffsetToInstance(instanceObject);
         BuildDoorWorldPositions();
+
+        // cache spawn points
+        spawnPoints.Clear();
+        foreach (var sp in data.spawnPoints)
+        {
+            if (sp == null) continue;
+            Transform instSP = instanceObject.transform.Find(sp.name);
+            if (instSP != null)
+                spawnPoints.Add(instSP);
+            else
+            {
+                // fallback
+                GameObject marker = new GameObject(sp.name + "_inst");
+                marker.transform.SetParent(instanceObject.transform, false);
+                marker.transform.localPosition = sp.localPosition;
+                spawnPoints.Add(marker.transform);
+            }
+        }
+
+        ComputeWorldBounds();
     }
 
+    public void ComputeWorldBounds()
+    {
+        if (data.layout == null || instanceObject == null)
+        {
+            bounds = new RectInt(0, 0, 1, 1);
+            return;
+        }
 
+        Tilemap instTilemap = instanceObject.GetComponentInChildren<Tilemap>();
+        if (instTilemap == null)
+        {
+            Debug.LogWarning($"Room {instanceObject.name} has no Tilemap child!");
+            bounds = new RectInt(0, 0, 1, 1);
+            return;
+        }
+
+        BoundsInt cb = instTilemap.cellBounds;
+
+        Vector3 worldMinF = instTilemap.CellToWorld(cb.min);
+        Vector2Int worldMin = new Vector2Int(Mathf.RoundToInt(worldMinF.x), Mathf.RoundToInt(worldMinF.y));
+        Vector2Int size = new Vector2Int(cb.size.x, cb.size.y);
+
+        bounds = new RectInt(worldMin, size);
+    }
 
     public void BuildDoorWorldPositions()
     {
         doors.Clear();
 
-        Tilemap tm = instanceObject.GetComponentInChildren<Tilemap>();
-        if (tm == null) return;
-
-        Vector3 tilemapOffset = tm.cellBounds.min;
-
-        foreach (Door d in data.doorways)
+        if (data.doorways == null || data.doorways.Count == 0)
         {
-            Vector2 trueCell = tilemapOffset + new Vector3(d.localTile.x, d.localTile.y);
-            Vector2 world = trueCell + (Vector2)(tm.cellSize / 2f);
-            doors.Add(new DoorLocation(world, d.direction, d));
+            Debug.LogWarning($"Room '{instanceObject.name}' has no doorways!");
+            return;
+        }
+
+        Tilemap instTilemap = instanceObject.GetComponentInChildren<Tilemap>();
+        if (instTilemap == null)
+        {
+            Debug.LogWarning($"RoomInstance '{instanceObject.name}': no instantiated Tilemap found.");
+            return;
+        }
+
+        foreach (Door door in data.doorways)
+        {
+            if (door == null) continue;
+
+            Vector3Int cellPos = new Vector3Int(Mathf.RoundToInt(door.localTile.x), Mathf.RoundToInt(door.localTile.y), 0);
+            Vector3 worldPosF = instTilemap.CellToWorld(cellPos);
+            Vector2 worldPos = new Vector2(worldPosF.x, worldPosF.y);
+
+            doors.Add(new DoorLocation(worldPos, door.direction, door));
         }
     }
 
@@ -58,28 +122,31 @@ public class RoomInstance
             return null;
 
         DoorLocation bestDoor = null;
-        float closestDistance = float.MaxValue;
+        float bestScore = float.MaxValue;
 
         Vector2 otherCenter = otherRoom.bounds.center;
 
         foreach (DoorLocation door in doors)
         {
-            // Skip if already connected
             if (connections.ContainsKey(door))
                 continue;
 
-            // Calculate distance to other room's center
             float distance = Vector2.Distance(door.worldPosition, otherCenter);
 
-            // Prefer doors facing the other room
+            float score = distance;
+
             if (IsDoorFacingRoom(door, otherRoom))
             {
-                distance *= 0.5f; // Bonus for correct facing
+                score *= 0.3f; 
+            }
+            else
+            {
+                score *= 2.0f; 
             }
 
-            if (distance < closestDistance)
+            if (score < bestScore)
             {
-                closestDistance = distance;
+                bestScore = score;
                 bestDoor = door;
             }
         }
@@ -123,41 +190,6 @@ public class RoomInstance
     {
         return connections.Values.ToList();
     }
-
-
-    public void ComputeWorldBounds()
-    {
-        Tilemap[] tilemaps = instanceObject.GetComponentsInChildren<Tilemap>();
-
-        if (tilemaps.Length == 0)
-        {
-            Debug.LogWarning($"Room {instanceObject.name} has no Tilemaps!");
-            bounds = new RectInt(0, 0, 1, 1);
-            return;
-        }
-
-        BoundsInt combined = tilemaps[0].cellBounds;
-
-        foreach (var tm in tilemaps)
-        {
-            combined.xMin = Math.Min(combined.xMin, tm.cellBounds.xMin);
-            combined.yMin = Math.Min(combined.yMin, tm.cellBounds.yMin);
-            combined.xMax = Math.Max(combined.xMax, tm.cellBounds.xMax);
-            combined.yMax = Math.Max(combined.yMax, tm.cellBounds.yMax);
-        }
-
-        // Convert to world coords
-        Vector3 worldMin = instanceObject.transform.TransformPoint(combined.min);
-        Vector3 worldMax = instanceObject.transform.TransformPoint(combined.max);
-
-        bounds = new RectInt(
-            Mathf.RoundToInt(worldMin.x),
-            Mathf.RoundToInt(worldMin.y),
-            Mathf.RoundToInt(worldMax.x - worldMin.x),
-            Mathf.RoundToInt(worldMax.y - worldMin.y)
-        );
-    }
-
 
 
 }

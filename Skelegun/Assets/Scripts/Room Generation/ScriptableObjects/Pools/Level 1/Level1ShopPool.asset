@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee4781589a17de047920af1a2fcb870a, type: 3}
-  m_Name: Level1SpawnPool
+  m_Name: Level1ShopPool
   m_EditorClassIdentifier: 
-  poolType: 0
+  poolType: 2
   roomPrefabs:
-  - {fileID: 1399938781785284468, guid: 4a866fccabf6bbc45b5e1e66cec54a0e, type: 3}
+  - {fileID: 1399938781785284468, guid: a12dda674a6d4f04eae4d4beb0eeeae7, type: 3}

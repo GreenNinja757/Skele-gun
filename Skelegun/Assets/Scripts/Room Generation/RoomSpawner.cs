@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿/*
+
+
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using UnityEngine.AI;
@@ -362,7 +365,7 @@ public class RoomSpawner : MonoBehaviour
         {
             player.transform.position = entryRoom.doorEntry.position;
         }
-        */
+        
     }
 
     void BakeMesh()
@@ -378,32 +381,7 @@ public class RoomSpawner : MonoBehaviour
 }
 
 
-
-
-
-
-
-   
-
-   
-
-
-    
-
-   
-
-
-
-
-
         
-
-
-
-
-
-
-/*
 
 
   [Header("Room Prefabs")]

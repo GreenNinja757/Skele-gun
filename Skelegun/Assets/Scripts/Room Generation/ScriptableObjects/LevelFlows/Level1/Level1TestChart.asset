@@ -19,7 +19,7 @@ MonoBehaviour:
     pool: {fileID: 11400000, guid: 222cfb847509a5e408090d7443e71d25, type: 2}
     connectedNodeIDs:
     - ea32c1f4-d645-420d-89ed-40fc09be5a81
-    editorPosition: {x: 39.333344, y: 209.33333}
+    editorPosition: {x: 1177.3334, y: 91.999954}
     size: {x: 250, y: 140}
   - id: ea32c1f4-d645-420d-89ed-40fc09be5a81
     displayName: Combat1
@@ -27,14 +27,50 @@ MonoBehaviour:
     pool: {fileID: 11400000, guid: 9c0e52989a2082241b31aa813c9d8d5c, type: 2}
     connectedNodeIDs:
     - 1Spawn
-    - 6ca10fae-af23-4f4c-a65b-63be75ff5018
-    editorPosition: {x: 678, y: 207.33334}
+    - 843eb634-8b61-4789-a5c6-e461552e0964
+    - 208a3a7b-33ca-4153-aeab-0af64059f702
+    - c82a287d-b655-479b-af6e-e82ba19e1a78
+    editorPosition: {x: 1190.6669, y: 344.66666}
     size: {x: 250, y: 140}
-  - id: 6ca10fae-af23-4f4c-a65b-63be75ff5018
-    displayName: Boss
-    roomType: 4
-    pool: {fileID: 0}
+  - id: 843eb634-8b61-4789-a5c6-e461552e0964
+    displayName: Combat2
+    roomType: 1
+    pool: {fileID: 11400000, guid: 9c0e52989a2082241b31aa813c9d8d5c, type: 2}
     connectedNodeIDs:
     - ea32c1f4-d645-420d-89ed-40fc09be5a81
-    editorPosition: {x: 1051.3334, y: 215.33334}
+    - b12f3ccd-6513-4e10-a7f5-b4388028aab3
+    editorPosition: {x: 1220, y: 628.6668}
+    size: {x: 250, y: 140}
+  - id: 208a3a7b-33ca-4153-aeab-0af64059f702
+    displayName: Shop
+    roomType: 2
+    pool: {fileID: 11400000, guid: b403caf79b8f978409ceecbd05536b8c, type: 2}
+    connectedNodeIDs:
+    - ea32c1f4-d645-420d-89ed-40fc09be5a81
+    - 94e1fdfb-ad4b-4a89-8467-b566cb86866c
+    editorPosition: {x: 726, y: 516.00006}
+    size: {x: 250, y: 140}
+  - id: 94e1fdfb-ad4b-4a89-8467-b566cb86866c
+    displayName: Boss
+    roomType: 4
+    pool: {fileID: 11400000, guid: 10c5edefef6bbaf468cdee713d964466, type: 2}
+    connectedNodeIDs:
+    - 208a3a7b-33ca-4153-aeab-0af64059f702
+    editorPosition: {x: 418, y: 972.6667}
+    size: {x: 250, y: 140}
+  - id: b12f3ccd-6513-4e10-a7f5-b4388028aab3
+    displayName: Combat3
+    roomType: 1
+    pool: {fileID: 11400000, guid: 9c0e52989a2082241b31aa813c9d8d5c, type: 2}
+    connectedNodeIDs:
+    - 843eb634-8b61-4789-a5c6-e461552e0964
+    editorPosition: {x: 1313.3334, y: 952.00006}
+    size: {x: 250, y: 140}
+  - id: c82a287d-b655-479b-af6e-e82ba19e1a78
+    displayName: Treasure
+    roomType: 6
+    pool: {fileID: 11400000, guid: 5f406bd6575f9fd4d8d8ea165534cd60, type: 2}
+    connectedNodeIDs:
+    - ea32c1f4-d645-420d-89ed-40fc09be5a81
+    editorPosition: {x: 1644.6667, y: 451.33337}
     size: {x: 250, y: 140}
