@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4781589a17de047920af1a2fcb870a, type: 3}
+  m_Name: Level1CombatPool
+  m_EditorClassIdentifier: 
+  poolType: 1
+  roomPrefabs:
+  - {fileID: 1399938781785284468, guid: 261be66dd4b222a4eb88ff2f8762b7da, type: 3}
+  - {fileID: 7395803156107526828, guid: a826ceb265798714da618cbfdb599388, type: 3}
+  - {fileID: 512109773582919904, guid: 5a1a26ef4968b204ca1c2fa095648a53, type: 3}

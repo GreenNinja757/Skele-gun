@@ -1,3 +1,6 @@
+﻿/*
+
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
@@ -5,16 +8,18 @@ using UnityEngine.AI;
 using NavMeshPlus.Components;
 using System.Linq;
 
-public class RoomSpawner : MonoBehaviour  //This is the new spawn system that should allow any size room, the old script is now "OldRoomGen", need to combine the two 
+public class RoomSpawner : MonoBehaviour
 {
-
     [Header("Config")]
     public RoomPool pool;
     public int targetRooms = 10;
     public bool seeded = true;
     public int seedOverride = 12345;
     public bool showGizmos = true;
+
     public NavMeshSurface surface;
+
+
     private RoomManager entryRoom;
 
 
@@ -48,17 +53,14 @@ public class RoomSpawner : MonoBehaviour  //This is the new spawn system that sh
 
     public void Generate()
     {
-
         ClearPrevious();
         // Place spawn at origin (grid 0,0)
         var spawnData = pool.roomPrefabs.FirstOrDefault(d => d.roomType == RoomType.Spawn);
         if (spawnData == null)
-
         {
             Debug.LogError("No spawn room in pool (RoomData with RoomType.Spawn required).");
             return;
         }
-
 
         PlaceInitialRoom(spawnData, Vector2Int.zero);
 
@@ -66,7 +68,6 @@ public class RoomSpawner : MonoBehaviour  //This is the new spawn system that sh
         Queue<RoomInstance> frontier = new Queue<RoomInstance>(placedRooms);
         int attempts = 0;
         while (placedRooms.Count < targetRooms && frontier.Count > 0 && attempts < targetRooms * 20)
-
         {
             attempts++;
             var current = frontier.Dequeue();
@@ -80,7 +81,7 @@ public class RoomSpawner : MonoBehaviour  //This is the new spawn system that sh
                 // calculate target grid position for new room (place adjacent so exits align cell-to-cell)
                 Vector2Int offset = dirOffsets[dir];
                 // new room will be placed so that the adjacent cell(s) line up.
-                // attempt to pick a prefab and place it so one of its exits faces back to current.
+                // we'll attempt to pick a prefab and place it such that one of its exits faces back to current.
                 if (placedRooms.Count >= targetRooms) break;
 
                 // Try to pick a room that can be placed here respecting minDistance and not overlapping
@@ -156,6 +157,7 @@ public class RoomSpawner : MonoBehaviour  //This is the new spawn system that sh
     int DecideExitCount(RoomManager manRay)
     {
         if (manRay.forceExitCount) return manRay.forcedExitCount;
+        // random 1..4 biased: more likely 2-3
         int roll = rnd.Next(100);
         if (roll < 10) return 1;
         if (roll < 60) return 2;
@@ -327,17 +329,45 @@ public class RoomSpawner : MonoBehaviour  //This is the new spawn system that sh
         go.transform.localScale = new Vector3(length / 1f, s.y, s.z);
     }
 
+    // Editor gizmos to visualize grid occupancy and anchors
+    void OnDrawGizmos()
+    {
+        if (!showGizmos) return;
+        if (pool == null) return;
+        Gizmos.color = Color.cyan;
+        if (placedRooms != null)
+        {
+            foreach (var r in placedRooms)
+            {
+                Gizmos.DrawWireCube(GridToWorld(r.gridPos, r.man) + new Vector3(r.man.gridSize.x * pool.gridCellSize.x, r.man.gridSize.y * pool.gridCellSize.y, 0f) / 2f,
+                                    new Vector3(r.man.gridSize.x * pool.gridCellSize.x, r.man.gridSize.y * pool.gridCellSize.y, 0.1f));
+                // draw exits
+                foreach (RoomDirection d in System.Enum.GetValues(typeof(RoomDirection)))
+                {
+                    var anchor = r.man.GetExit(d);
+                    if (anchor != null)
+                    {
+                        Gizmos.DrawSphere(anchor.position, 0.15f);
+                    }
+                }
+            }
+        }
+    }
+
+
+
     void PlacePlayer()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        player.transform.position = new Vector2(0, 0);
+        player.transform.position =  new Vector2(0, 0);
         /*
         if (player != null && entryRoom != null && entryRoom.doorEntry != null)
         {
             player.transform.position = entryRoom.doorEntry.position;
         }
-        */
+        
     }
+
     void BakeMesh()
     {
         if (surface != null)
@@ -347,16 +377,12 @@ public class RoomSpawner : MonoBehaviour  //This is the new spawn system that sh
         }
 
     }
+
 }
 
 
+        
 
-
-       
-
-
-
-/*  Don't remember what this was for, maybe an inbetween the OG and this one?
 
   [Header("Room Prefabs")]
     public GameObject entryRoomPrefab;
@@ -369,34 +395,53 @@ public class RoomSpawner : MonoBehaviour  //This is the new spawn system that sh
     public int combatRoomCount = 2;
   
     private List<RoomManager> spawnedRooms = new List<RoomManager>();
+
+
+    
     void Start()
     {
         GenerateDungeon();
         PlacePlayer();
         BakeMesh();
+       
     }
+
+  
+
+
+   
+
+
+
+
     void GenerateDungeon()
     {
         RoomManager previousRoom = null;
+
         // Entry
         entryRoom = SpawnRoom(entryRoomPrefab, null);
         previousRoom = entryRoom;
+
         // Combat rooms
         for (int i = 0; i < combatRoomCount; i++)
         {
             RoomManager combat = SpawnRoom(combatRoomPrefab, previousRoom.doorExit);
             previousRoom = combat;
         }
+
         // Shop
         RoomManager shop = SpawnRoom(shopRoomPrefab, previousRoom.doorExit);
         previousRoom = shop;
+
         // Reward
         RoomManager reward = SpawnRoom(rewardRoomPrefab, previousRoom.doorExit);
         previousRoom = reward;
+
         // Boss
         RoomManager boss = SpawnRoom(bossRoomPrefab, previousRoom.doorExit);
         previousRoom = boss;
     }
+
     RoomManager SpawnRoom(GameObject prefab, Transform previousExit)
     {
         GameObject roomObj = Instantiate(prefab, Vector3.zero, Quaternion.identity);
@@ -408,8 +453,9 @@ public class RoomSpawner : MonoBehaviour  //This is the new spawn system that sh
             Vector3 offset = previousExit.position - rm.doorEntry.position;
             roomObj.transform.position += offset;
         }
+
         spawnedRooms.Add(rm);
         return rm;
+    
 }
 */
-
